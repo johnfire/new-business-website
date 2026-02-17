@@ -1,0 +1,22 @@
+/* ── RESET ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ── VARIABLES ── */
+:root {
+  --cream:      #F8F4EF;
+  --vermillion: #9B1B2A;
+  --yellow:     #F5E642;
+  --dark:       #1A1410;
+  --mid:        #4A3F38;
+  --strip-max:  110px;
+  --nav-h:      64px;
+}
+
+/* ── BASE ── */
+html { scroll-behavior: smooth; }
+body {
+  background: var(--cream);
+  color: var(--dark);
+  font-family: 'DM Sans', sans-serif;
+  overflow-x: hidden;
+}

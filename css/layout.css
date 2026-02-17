@@ -1,0 +1,112 @@
+/* ── LANG TOGGLE ── */
+#lang-bar {
+  position: fixed;
+  top: 6px; right: 12px;
+  z-index: 200;
+  display: flex;
+  gap: 4px;
+}
+
+/* ── PHOTO STRIP ── */
+#photo-strip {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: var(--strip-max);
+  z-index: 100;
+  overflow: hidden;
+  transition: height 0.05s linear, opacity 0.05s linear;
+}
+#photo-strip img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+
+/* ── NAV ── */
+nav {
+  position: fixed;
+  left: 0; right: 0;
+  top: var(--strip-max);
+  height: var(--nav-h);
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 48px;
+  background: var(--cream);
+  border-bottom: 1px solid rgba(26,20,16,0.08);
+  transition: top 0.05s linear, box-shadow 0.2s;
+}
+nav.scrolled { box-shadow: 0 2px 12px rgba(26,20,16,0.08); }
+
+/* ── HERO ── */
+#hero {
+  padding-top: calc(var(--strip-max) + var(--nav-h));
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 30%;
+}
+
+.hero-left {
+  padding: 72px 64px 72px 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  opacity: 0;
+  animation: fadeUp 0.7s 0.2s ease forwards;
+}
+
+.hero-right {
+  background: var(--vermillion);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 48px 40px;
+  opacity: 0;
+  animation: fadeIn 0.8s 0.4s ease forwards;
+}
+
+/* ── SECTIONS ── */
+.section {
+  padding: 100px 0;
+}
+.section-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 72px;
+}
+
+/* ── ABOUT LAYOUT ── */
+.about-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+/* ── CONTACT LAYOUT ── */
+.contact-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* ── IMPRESSUM LAYOUT ── */
+.impressum-inner {
+  max-width: 680px;
+}
+
+/* ── FOOTER ── */
+footer {
+  padding: 28px 72px;
+  background: var(--dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
