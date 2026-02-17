@@ -9,3 +9,12 @@ Thumbs.db
 
 # Logs / temp
 *.log
+legacy/logs/
+
+# Images — keep legacy photos local only
+*.jpg
+*.JPG
+*.jpeg
+*.JPEG
+# Exception: the photo strip image the new site needs
+!images/the-boat-houses-m.jpg
