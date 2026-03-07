@@ -14,7 +14,7 @@
   height: var(--strip-max);
   z-index: 100;
   overflow: hidden;
-  transition: height 0.05s linear, opacity 0.05s linear;
+
 }
 #photo-strip img {
   width: 100%;
@@ -37,7 +37,7 @@ nav {
   padding: 0 48px;
   background: var(--cream);
   border-bottom: 1px solid rgba(26,20,16,0.08);
-  transition: top 0.05s linear, box-shadow 0.2s;
+  transition: box-shadow 0.2s;
 }
 nav.scrolled { box-shadow: 0 2px 12px rgba(26,20,16,0.08); }
 
