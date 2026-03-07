@@ -5,7 +5,7 @@
 
 Senior engineer & architect based in Klosterlechfeld, Bavaria. Available for new projects · Remote worldwide.
 
-Contact: [hello@christopherrehm.de](mailto:hello@christopherrehm.de)
+Contact: [info@christopherrehm.de](mailto:info@christopherrehm.de)
 
 ---
 
@@ -66,4 +66,4 @@ Christopher Rehm
 86836 Klosterlechfeld
 Deutschland
 
-E-Mail: [hello@christopherrehm.de](mailto:hello@christopherrehm.de)
+E-Mail: [info@christopherrehm.de](mailto:info@christopherrehm.de)
