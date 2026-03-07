@@ -13,10 +13,8 @@
 }
 
 /* ── BASE ── */
-html { scroll-behavior: smooth; }
 body {
   background: var(--cream);
   color: var(--dark);
   font-family: 'DM Sans', sans-serif;
-  overflow-x: hidden;
 }
