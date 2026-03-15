@@ -11,6 +11,9 @@ Thumbs.db
 *.log
 legacy/logs/
 
+# Old legacy site directory
+christopherrehm.de/
+
 # Images — keep legacy photos local only
 *.jpg
 *.JPG
