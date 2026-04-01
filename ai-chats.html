@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KI-Gespräche — Christopher Rehm</title>
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="A curated collection of conversations with AI systems — Claude, Grok, and others. Topics include AI memory, autonomous agents, consciousness, and AI's impact on society. By Christopher Rehm."
+    />
+    <link rel="canonical" href="https://www.christopherrehm.de/ai-chats.html" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/variables.css?v=2" />
+    <link rel="stylesheet" href="css/layout.css?v=2" />
+    <link rel="stylesheet" href="css/components.css?v=2" />
+    <script
+      defer
+      src="https://analytics.christopherrehm.de/script.js"
+      data-website-id="4af6d62c-7d42-4e0c-8309-3e8711b5d195"
+    ></script>
+    <style>
+      .chat-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .chat-list li {
+        padding: 20px 0;
+        border-bottom: 1px solid var(--rule, #2a2a2a);
+      }
+      .chat-list li:last-child {
+        border-bottom: none;
+      }
+      .chat-list a {
+        font-family: "Rajdhani", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--fg);
+        text-decoration: none;
+        display: block;
+        margin-bottom: 6px;
+        transition: color 0.2s;
+      }
+      .chat-list a:hover {
+        color: var(--vermillion, #e05c3a);
+      }
+      .chat-list .chat-desc {
+        font-family: "DM Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        color: var(--mid);
+      }
+      .ai-tag {
+        display: inline-block;
+        font-size: 11px;
+        font-family: "Rajdhani", sans-serif;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        padding: 2px 7px;
+        border-radius: 3px;
+        margin-right: 6px;
+        vertical-align: middle;
+      }
+      .ai-tag.claude {
+        background: #2a1f3d;
+        color: #c9a8ff;
+      }
+      .ai-tag.grok {
+        background: #1a2a1a;
+        color: #7ecf7e;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ── PHOTO STRIP ── -->
+    <div id="photo-strip">
+      <img
+        id="strip-img"
+        src="images/the-boat-houses-m.jpg"
+        alt="Bootshäuser in Bayern"
+        width="300"
+        height="200"
+      />
+    </div>
+
+    <!-- ── NAV ── -->
+    <nav id="main-nav">
+      <div class="logo-wrap">
+        <a
+          href="index.html"
+          style="
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+          "
+        >
+          <div class="logo-mark">CR</div>
+          <span class="logo-text">Christopher Rehm</span>
+        </a>
+      </div>
+      <ul>
+        <li><a href="index.html#contact" class="nav-cta">Kontakt</a></li>
+        <li><a href="index.html#about">Über mich</a></li>
+        <li><a href="index.html#services">Leistungen</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li>
+          <a href="ai-chats.html" style="color: var(--vermillion)"
+            >KI-Gespräche</a
+          >
+        </li>
+        <li><a href="tools.html">Tools</a></li>
+        <li>
+          <a href="https://github.com/johnfire" target="_blank" rel="noopener"
+            >GitHub</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://artbychristopherrehm.com"
+            target="_blank"
+            rel="noopener"
+            >Art</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ── CONTENT ── -->
+    <div style="padding-top: calc(var(--strip-max) + var(--nav-h))">
+      <section class="section">
+        <div class="section-inner">
+          <div class="impressum-inner" style="max-width: 800px">
+            <p class="section-label">
+              Künstliche Intelligenz · Artificial Intelligence
+            </p>
+            <h2 class="section-heading">
+              <span class="sh-light">KI-</span
+              ><span class="sh-bold">Gespräche</span>
+            </h2>
+            <p
+              style="
+                font-family: &quot;DM Sans&quot;, sans-serif;
+                font-size: 14px;
+                font-weight: 300;
+                color: var(--mid);
+                margin-bottom: 40px;
+              "
+            >
+              Eine Sammlung interessanter Unterhaltungen mit KI-Systemen.<br />
+              A curated collection of interesting conversations with AI systems.
+            </p>
+
+            <ul class="chat-list">
+              <li>
+                <a
+                  href="https://claude.ai/share/a521f43b-c8ec-4f0a-baa3-c1db24343f52"
+                  target="_blank"
+                  rel="noopener"
+                  >KI-Gedächtnis &amp; bessere Prompts · AI Memory &amp;
+                  Improving Prompts</a
+                >
+                <span class="chat-desc">
+                  <span class="ai-tag claude">Claude</span>
+                  DE: Wie KI-Systeme Kontext speichern und wie man Prompts
+                  effektiver gestaltet.<br />
+                  EN: How AI systems store context and how to craft more
+                  effective prompts.
+                </span>
+              </li>
+              <li>
+                <a
+                  href="https://grok.com/share/c2hhcmQtMg_e4778a5e-34fc-4f02-98dc-ee7b5b6f00f6"
+                  target="_blank"
+                  rel="noopener"
+                  >KI-Agenten verstehen · Understanding AI Agents</a
+                >
+                <span class="chat-desc">
+                  <span class="ai-tag grok">Grok</span>
+                  DE: Ein Gespräch über autonome KI-Agenten und die
+                  Zusammenarbeit mit ihnen.<br />
+                  EN: A conversation about autonomous AI agents and how to
+                  collaborate with them.
+                </span>
+              </li>
+              <li>
+                <a
+                  href="https://grok.com/c/43135e1d-b9ab-43a0-9279-013b9154e864?rid=ec172a5e-df57-4f6c-bc0a-74a5314e0ac8"
+                  target="_blank"
+                  rel="noopener"
+                  >KI und gesellschaftlicher Wandel · AI Disruption in
+                  Society</a
+                >
+                <span class="chat-desc">
+                  <span class="ai-tag grok">Grok</span>
+                  DE: Über die Disruption durch KI und ihre Auswirkungen auf
+                  Gesellschaft und Arbeit.<br />
+                  EN: On how AI is reshaping society, work, and what comes next.
+                </span>
+              </li>
+              <li>
+                <a
+                  href="https://claude.ai/share/44e6945f-dbc7-44ce-b480-a3d63ac7d010"
+                  target="_blank"
+                  rel="noopener"
+                  >Bewusstsein bei KI-Systemen · Consciousness in AI Systems</a
+                >
+                <span class="chat-desc">
+                  <span class="ai-tag claude">Claude</span>
+                  DE: Eine tiefgehende Diskussion über Bewusstsein,
+                  Empfindungsvermögen und das Innenleben von KIs.<br />
+                  EN: A deep discussion on consciousness, sentience, and what it
+                  might be like inside an AI.
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ── FOOTER ── -->
+    <footer>
+      <div class="logo-mark">CR</div>
+      <p class="footer-text">
+        © 2026 Christopher Rehm · Klosterlechfeld, Bayern
+      </p>
+      <a href="index.html" class="footer-legacy">← Zurück</a>
+    </footer>
+
+    <script src="js/nav.js?v=2"></script>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /legacy/
+Disallow: /cv/
+Disallow: /files/
+
+Sitemap: https://www.christopherrehm.de/sitemap.xml

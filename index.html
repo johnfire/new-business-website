@@ -1,325 +1,495 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Christopher Rehm — Engineering &amp; Consulting</title>
-  <meta name="description" content="Senior software engineer and architect based in Bavaria. AI agents, full-stack web development, and technical consulting. Available for remote projects worldwide. If you have a problem with no obvious solution — ask me, I like that sort of thing.">
-  <meta name="author" content="Christopher Rehm">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://www.christopherrehm.de/">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christopher Rehm — Engineering &amp; Consulting</title>
+    <meta
+      name="description"
+      content="Senior software engineer and architect based in Bavaria. AI agents, full-stack web development, and technical consulting. Available for remote projects worldwide. If you have a problem with no obvious solution — ask me, I like that sort of thing."
+    />
+    <meta name="author" content="Christopher Rehm" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.christopherrehm.de/" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.christopherrehm.de/">
-  <meta property="og:title" content="Christopher Rehm — Engineering &amp; Consulting">
-  <meta property="og:description" content="Senior software engineer and architect based in Bavaria. AI agents, full-stack web development, and technical consulting. Available for remote projects worldwide. If you have a problem with no obvious solution — ask me, I like that sort of thing.">
-  <meta property="og:image" content="https://www.christopherrehm.de/images/og-christopher.jpg">
-  <meta property="og:locale" content="de_DE">
-  <meta property="og:locale:alternate" content="en_GB">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.christopherrehm.de/" />
+    <meta
+      property="og:title"
+      content="Christopher Rehm — Engineering &amp; Consulting"
+    />
+    <meta
+      property="og:description"
+      content="Senior software engineer and architect based in Bavaria. AI agents, full-stack web development, and technical consulting. Available for remote projects worldwide. If you have a problem with no obvious solution — ask me, I like that sort of thing."
+    />
+    <meta
+      property="og:image"
+      content="https://www.christopherrehm.de/images/og-christopher.jpg"
+    />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:locale:alternate" content="en_GB" />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Christopher Rehm — Engineering &amp; Consulting">
-  <meta name="twitter:description" content="Senior software engineer and architect based in Bavaria. AI agents, full-stack web development, and technical consulting. Available for remote projects worldwide. If you have a problem with no obvious solution — ask me, I like that sort of thing.">
-  <meta name="twitter:image" content="https://www.christopherrehm.de/images/og-christopher.jpg">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Christopher Rehm — Engineering &amp; Consulting"
+    />
+    <meta
+      name="twitter:description"
+      content="Senior software engineer and architect based in Bavaria. AI agents, full-stack web development, and technical consulting. Available for remote projects worldwide. If you have a problem with no obvious solution — ask me, I like that sort of thing."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.christopherrehm.de/images/og-christopher.jpg"
+    />
 
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Christopher Rehm",
-    "url": "https://www.christopherrehm.de",
-    "image": "https://www.christopherrehm.de/images/og-christopher.jpg",
-    "email": "info@christopherrehm.de",
-    "jobTitle": "Software Engineer & Consultant",
-    "description": "Senior software engineer and architect based in Bavaria. AI agents, full-stack web development, and technical consulting.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Klosterlechfeld",
-      "addressRegion": "Bayern",
-      "addressCountry": "DE"
-    },
-    "sameAs": [
-      "https://tandkcybernetics.net",
-      "https://artbychristopherrehm.com"
-    ]
-  }
-  </script>
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Christopher Rehm",
+        "url": "https://www.christopherrehm.de",
+        "image": "https://www.christopherrehm.de/images/og-christopher.jpg",
+        "email": "info@christopherrehm.de",
+        "jobTitle": "Software Engineer & Consultant",
+        "description": "Senior software engineer and architect based in Bavaria. AI agents, full-stack web development, and technical consulting.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Klosterlechfeld",
+          "addressRegion": "Bayern",
+          "addressCountry": "DE"
+        },
+        "sameAs": [
+          "https://tandkcybernetics.net",
+          "https://artbychristopherrehm.com",
+          "https://www.kunstverein-landsberg.de"
+        ]
+      }
+    </script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/variables.css?v=2">
-  <link rel="stylesheet" href="css/layout.css?v=2">
-  <link rel="stylesheet" href="css/components.css?v=2">
-  <script defer src="https://analytics.christopherrehm.de/script.js" data-website-id="4af6d62c-7d42-4e0c-8309-3e8711b5d195"></script>
-</head>
-<body>
+    <link rel="preload" as="image" href="images/the-boat-houses-m.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/variables.css?v=2" />
+    <link rel="stylesheet" href="css/layout.css?v=2" />
+    <link rel="stylesheet" href="css/components.css?v=2" />
+    <script
+      defer
+      src="https://stats.christopherrehm.de/script.js"
+      data-website-id="1ec1a2d7-56e7-4a15-8587-045dc81ca4bf"
+    ></script>
+  </head>
+  <body>
+    <!-- ── LANG TOGGLE ── -->
+    <div id="lang-bar">
+      <button class="lang-btn active" onclick="setLang('de')">DE</button>
+      <button class="lang-btn" onclick="setLang('en')">EN</button>
+    </div>
 
-<!-- ── LANG TOGGLE ── -->
-<div id="lang-bar">
-  <button class="lang-btn active" onclick="setLang('de')">DE</button>
-  <button class="lang-btn" onclick="setLang('en')">EN</button>
-</div>
+    <!-- ── PHOTO STRIP ── -->
+    <div id="photo-strip">
+      <img
+        id="strip-img"
+        src="images/the-boat-houses-m.jpg"
+        alt="Bootshäuser in Bayern"
+        width="300"
+        height="200"
+      />
+    </div>
 
-<!-- ── PHOTO STRIP ── -->
-<div id="photo-strip">
-  <img id="strip-img" src="images/the-boat-houses-m.jpg" alt="Bootshäuser in Bayern">
-</div>
+    <!-- ── NAV ── -->
+    <nav id="main-nav">
+      <div class="logo-wrap">
+        <div class="logo-mark">CR</div>
+        <span class="logo-text">Christopher Rehm</span>
+      </div>
+      <ul>
+        <li>
+          <a href="#contact" class="nav-cta" data-i18n="nav_contact">Kontakt</a>
+        </li>
+        <li><a href="#about" data-i18n="nav_about">Über mich</a></li>
+        <li><a href="#services" data-i18n="nav_services">Leistungen</a></li>
+        <li id="nav-work"><a href="#work">Work</a></li>
+        <li>
+          <a href="impressum.html" data-i18n="nav_impressum">Impressum</a>
+        </li>
+        <li><a href="ai-chats.html">KI-Gespräche</a></li>
+        <li><a href="tools.html">Tools</a></li>
+        <li>
+          <a href="https://github.com/johnfire" target="_blank" rel="noopener"
+            >GitHub</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://artbychristopherrehm.com"
+            target="_blank"
+            rel="noopener"
+            >Art</a
+          >
+        </li>
+      </ul>
+    </nav>
 
-<!-- ── NAV ── -->
-<nav id="main-nav">
-  <div class="logo-wrap">
-    <div class="logo-mark">CR</div>
-    <span class="logo-text">Christopher Rehm</span>
-  </div>
-  <ul>
-    <li><a href="#about"     data-i18n="nav_about">Über mich</a></li>
-    <li><a href="#services"  data-i18n="nav_services">Leistungen</a></li>
-    <li id="nav-work"><a href="#work">Work</a></li>
-    <li><a href="impressum.html" data-i18n="nav_impressum">Impressum</a></li>
-    <li><a href="#contact"   class="nav-cta" data-i18n="nav_contact">Kontakt</a></li>
-  </ul>
-</nav>
-
-<!-- ═══════════════════════════════════════════
+    <!-- ═══════════════════════════════════════════
      HERO
 ════════════════════════════════════════════ -->
-<section id="hero">
+    <section id="hero">
+      <!-- LEFT -->
+      <div class="hero-left">
+        <div class="availability">
+          <span class="dot"></span>
+          <span data-i18n="availability"
+            >Verfügbar für neue Projekte · Bayern · Remote</span
+          >
+        </div>
 
-  <!-- LEFT -->
-  <div class="hero-left">
-    <div class="availability">
-      <span class="dot"></span>
-      <span data-i18n="availability">Verfügbar für neue Projekte · Bayern · Remote</span>
-    </div>
+        <h1>
+          <span class="h1-line1" data-i18n="h1_line1"
+            >Engineering das denkt.</span
+          >
+          <span class="h1-line2"
+            ><span data-i18n="h1_line2_pre">Software die&nbsp;</span
+            ><span class="underline" data-i18n="h1_line2_ships"
+              >liefert.</span
+            ></span
+          >
+        </h1>
 
-    <h1>
-      <span class="h1-line1" data-i18n="h1_line1">Engineering das denkt.</span>
-      <span class="h1-line2"><span data-i18n="h1_line2_pre">Software die&nbsp;</span><span class="underline" data-i18n="h1_line2_ships">liefert.</span></span>
-    </h1>
+        <p class="subline" data-i18n="subline">
+          Senior-Ingenieur &amp; Architekt mit tiefen Wurzeln in Hardware,
+          Full-Stack-Entwicklung und KI-Werkzeugen. Ich bringe Präzision in
+          komplexe Systeme und ein kreatives Auge für jedes Interface.
+        </p>
 
-    <p class="subline" data-i18n="subline">
-      Senior-Ingenieur &amp; Architekt mit tiefen Wurzeln in Hardware, Full-Stack-Entwicklung und KI-Werkzeugen. Ich bringe Präzision in komplexe Systeme und ein kreatives Auge für jedes Interface.
-    </p>
+        <div class="cta-group">
+          <a href="#contact" class="btn-primary" data-i18n="btn_primary"
+            >Projekt starten</a
+          >
+          <a
+            href="#work"
+            class="btn-secondary"
+            id="btn-see-work"
+            data-i18n="btn_see_work"
+            >Meine Arbeiten</a
+          >
+        </div>
 
-    <div class="cta-group">
-      <a href="#contact" class="btn-primary" data-i18n="btn_primary">Projekt starten</a>
-      <a href="#work"    class="btn-secondary" id="btn-see-work" data-i18n="btn_see_work">Meine Arbeiten</a>
-    </div>
+        <div class="scroll-hint">
+          <span class="scroll-line"></span>
+          <span data-i18n="scroll_hint">Scrollen zum Entdecken</span>
+        </div>
+      </div>
 
-    <div class="scroll-hint">
-      <span class="scroll-line"></span>
-      <span data-i18n="scroll_hint">Scrollen zum Entdecken</span>
-    </div>
-  </div>
+      <!-- RIGHT -->
+      <div class="hero-right">
+        <span class="ghost-cr">CR</span>
+        <div class="geo-square"></div>
+        <div class="geo-circle"></div>
 
-  <!-- RIGHT -->
-  <div class="hero-right">
-    <span class="ghost-cr">CR</span>
-    <div class="geo-square"></div>
-    <div class="geo-circle"></div>
+        <div class="service-card">
+          <p class="card-label" data-i18n="card_label">Was ich baue</p>
+          <ul class="service-list">
+            <li data-i18n="svc1">KI-Agenten &amp; Intelligente Werkzeuge</li>
+            <li data-i18n="svc2">Architektur &amp; Technische Beratung</li>
+            <li data-i18n="svc3">Full-Stack-Webentwicklung</li>
+            <li data-i18n="svc4">Ein komplexes Problem? Ich löse es.</li>
+          </ul>
+        </div>
 
-    <div class="service-card">
-      <p class="card-label" data-i18n="card_label">Was ich baue</p>
-      <ul class="service-list">
-        <li data-i18n="svc1">KI-Agenten &amp; Intelligente Werkzeuge</li>
-        <li data-i18n="svc2">Architektur &amp; Technische Beratung</li>
-        <li data-i18n="svc3">Full-Stack-Webentwicklung</li>
-        <li data-i18n="svc4">Ein komplexes Problem? Ich löse es.</li>
-      </ul>
-    </div>
+        <p class="personal-quote">
+          <span data-i18n="quote"
+            >„Ich habe Netzwerkprozessoren bei Intel gebaut und Aquarelle in
+            Bayern gemalt.<br />Beide Denkweisen bringe ich in Ihr
+            Projekt."</span
+          >
+        </p>
+      </div>
+    </section>
 
-    <p class="personal-quote">
-      <span data-i18n="quote">„Ich habe Netzwerkprozessoren bei Intel gebaut und Aquarelle in Bayern gemalt.<br>Beide Denkweisen bringe ich in Ihr Projekt."</span>
-    </p>
-  </div>
-
-</section>
-
-<!-- ═══════════════════════════════════════════
+    <!-- ═══════════════════════════════════════════
      ABOUT
 ════════════════════════════════════════════ -->
-<section id="about" class="section">
-  <div class="section-inner">
-    <div class="about-inner">
+    <section id="about" class="section">
+      <div class="section-inner">
+        <div class="about-inner">
+          <div class="about-left">
+            <p class="section-label" data-i18n="about_label">Über mich</p>
+            <h2 class="section-heading">
+              <span class="sh-light" data-i18n="about_h2_light"
+                >Ingenieur.</span
+              >
+              <span class="sh-bold" data-i18n="about_h2_bold"
+                >Architekt. Künstler.</span
+              >
+            </h2>
+            <p class="about-bio" data-i18n="about_bio">
+              Ich begann meine künstlerische Laufbahn im Alter von 7 Jahren in
+              Key West, Florida. Nach dem Armeedienst und ausgedehnten Reisen
+              zog ich vor 19 Jahren nach Europa — heute lebe ich in
+              Klosterlechfeld, Bayern.
+            </p>
+            <p class="about-bio" data-i18n="about_bio2">
+              Als Design-Ingenieur bei Intel entwickelte ich Netzwerkprozessoren
+              in VHDL. Seit über 6 Jahren baue ich Web-Applikationen mit React,
+              Node.js, TypeScript und MongoDB. Ingenieurswesen und Kunst sind
+              meine beiden Leidenschaften — ich bringe all meine Erfahrungen
+              mit, was Ihrem Projekt den entscheidenden Vorteil verschafft.
+            </p>
+            <a href="#contact" class="btn-primary" data-i18n="about_cta"
+              >Projekt starten</a
+            >
+          </div>
 
-      <div class="about-left">
-        <p class="section-label" data-i18n="about_label">Über mich</p>
-        <h2 class="section-heading">
-          <span class="sh-light" data-i18n="about_h2_light">Ingenieur.</span>
-          <span class="sh-bold"  data-i18n="about_h2_bold">Architekt. Künstler.</span>
-        </h2>
-        <p class="about-bio" data-i18n="about_bio">
-          Ich begann meine künstlerische Laufbahn im Alter von 7 Jahren in Key West, Florida. Nach dem Armeedienst und ausgedehnten Reisen zog ich vor 19 Jahren nach Europa — heute lebe ich in Klosterlechfeld, Bayern.
-        </p>
-        <p class="about-bio" data-i18n="about_bio2">
-          Als Design-Ingenieur bei Intel entwickelte ich Netzwerkprozessoren in VHDL. Seit über 6 Jahren baue ich Web-Applikationen mit React, Node.js, TypeScript und MongoDB. Ich bin auch Krebsüberlebender — sechs Jahre widmete ich mich dem Holzschnittdruck während meiner Genesung.
-        </p>
-        <a href="#contact" class="btn-primary" data-i18n="about_cta">Projekt starten</a>
+          <div class="about-right">
+            <ul class="bio-list">
+              <li>
+                <strong data-i18n="bio_fact1_title"
+                  >Intel — Design-Ingenieur</strong
+                >
+                <span data-i18n="bio_fact1_desc"
+                  >VHDL, Netzwerkprozessoren</span
+                >
+              </li>
+              <li>
+                <strong data-i18n="bio_fact2_title"
+                  >Full-Stack-Entwicklung</strong
+                >
+                <span data-i18n="bio_fact2_desc"
+                  >6+ Jahre · React, Node, TypeScript, MongoDB</span
+                >
+              </li>
+              <li>
+                <strong data-i18n="bio_fact2b_title"
+                  >Python, C, C++ &amp; Assembler</strong
+                >
+                <span data-i18n="bio_fact2b_desc">20+ Jahre Erfahrung</span>
+              </li>
+              <li>
+                <strong data-i18n="bio_fact2c_title"
+                  >MBA — Purdue University</strong
+                >
+                <span data-i18n="bio_fact2c_desc">2007</span>
+              </li>
+              <li>
+                <strong data-i18n="bio_fact2d_title"
+                  >Computer Systems Engineer — University of Arkansas</strong
+                >
+                <span data-i18n="bio_fact2d_desc">2001</span>
+              </li>
+              <li>
+                <strong data-i18n="bio_fact3_title">Bildender Künstler</strong>
+                <span data-i18n="bio_fact3_desc"
+                  >Öl, Aquarell, Holzschnitt, Fotografie</span
+                >
+              </li>
+              <li>
+                <strong data-i18n="bio_fact4_title"
+                  >Galerie Auxburg, Augsburg</strong
+                >
+                <span data-i18n="bio_fact4_desc"
+                  >Professionell ausstellender Künstler</span
+                >
+              </li>
+              <li>
+                <strong data-i18n="bio_fact5_title"
+                  >Va Tech — Architektur &amp; Design</strong
+                >
+                <span data-i18n="bio_fact5_desc"
+                  >School of Architecture and Design</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="about-right">
-        <ul class="bio-list">
-          <li>
-            <strong data-i18n="bio_fact1_title">Intel — Design-Ingenieur</strong>
-            <span   data-i18n="bio_fact1_desc">VHDL, Netzwerkprozessoren</span>
-          </li>
-          <li>
-            <strong data-i18n="bio_fact2_title">Full-Stack-Entwicklung</strong>
-            <span   data-i18n="bio_fact2_desc">6+ Jahre · React, Node, TypeScript, MongoDB</span>
-          </li>
-          <li>
-            <strong data-i18n="bio_fact3_title">Bildender Künstler</strong>
-            <span   data-i18n="bio_fact3_desc">Öl, Aquarell, Holzschnitt, Fotografie</span>
-          </li>
-          <li>
-            <strong data-i18n="bio_fact4_title">Galerie Auxburg, Augsburg</strong>
-            <span   data-i18n="bio_fact4_desc">Professionell ausstellender Künstler</span>
-          </li>
-          <li>
-            <strong data-i18n="bio_fact5_title">Va Tech — Architektur &amp; Design</strong>
-            <span   data-i18n="bio_fact5_desc">School of Architecture and Design</span>
-          </li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════
+    <!-- ═══════════════════════════════════════════
      SERVICES
 ════════════════════════════════════════════ -->
-<section id="services" class="section">
-  <div class="section-inner">
+    <section id="services" class="section">
+      <div class="section-inner">
+        <p
+          class="section-label section-label--light"
+          data-i18n="services_label"
+        >
+          Leistungen
+        </p>
+        <h2 class="section-heading section-heading--light">
+          <span class="sh-light" data-i18n="services_h2_light">Was ich</span>
+          <span class="sh-bold" data-i18n="services_h2_bold"
+            >für Sie baue.</span
+          >
+        </h2>
 
-    <p class="section-label section-label--light" data-i18n="services_label">Leistungen</p>
-    <h2 class="section-heading section-heading--light">
-      <span class="sh-light" data-i18n="services_h2_light">Was ich</span>
-      <span class="sh-bold"  data-i18n="services_h2_bold">für Sie baue.</span>
-    </h2>
+        <div class="services-grid">
+          <div class="svc-card">
+            <div class="svc-num">01</div>
+            <h3 class="svc-title" data-i18n="svc_title1">
+              KI-Agenten &amp; Intelligente Werkzeuge
+            </h3>
+            <p class="svc-desc" data-i18n="svc_desc1">
+              Von der Konzeption bis zur Produktion: LLM-Integration,
+              RAG-Systeme, autonome Pipelines und smarte Werkzeuge, die echte
+              Aufgaben übernehmen.
+            </p>
+            <div class="svc-tags">
+              <span class="svc-tag">LLM</span>
+              <span class="svc-tag">RAG</span>
+              <span class="svc-tag">Agents</span>
+              <span class="svc-tag">Python</span>
+            </div>
+          </div>
 
-    <div class="services-grid">
+          <div class="svc-card">
+            <div class="svc-num">02</div>
+            <h3 class="svc-title" data-i18n="svc_title2">
+              Architektur &amp; Technische Beratung
+            </h3>
+            <p class="svc-desc" data-i18n="svc_desc2">
+              Systemdesign und technische Führung für skalierbare, wartbare
+              Software. Von der ersten Skizze bis zur Implementierung — klar und
+              umsetzbar.
+            </p>
+            <div class="svc-tags">
+              <span class="svc-tag">System Design</span>
+              <span class="svc-tag">API</span>
+              <span class="svc-tag">Cloud</span>
+              <span class="svc-tag">VHDL</span>
+            </div>
+          </div>
 
-      <div class="svc-card">
-        <div class="svc-num">01</div>
-        <h3 class="svc-title" data-i18n="svc_title1">KI-Agenten &amp; Intelligente Werkzeuge</h3>
-        <p  class="svc-desc"  data-i18n="svc_desc1">Von der Konzeption bis zur Produktion: LLM-Integration, RAG-Systeme, autonome Pipelines und smarte Werkzeuge, die echte Aufgaben übernehmen.</p>
-        <div class="svc-tags">
-          <span class="svc-tag">LLM</span>
-          <span class="svc-tag">RAG</span>
-          <span class="svc-tag">Agents</span>
-          <span class="svc-tag">Python</span>
+          <div class="svc-card">
+            <div class="svc-num">03</div>
+            <h3 class="svc-title" data-i18n="svc_title3">
+              Full-Stack-Webentwicklung
+            </h3>
+            <p class="svc-desc" data-i18n="svc_desc3">
+              Moderne Web-Apps mit React, Node.js, TypeScript und MongoDB.
+              Schnell, sauber, wartbar — und gut anzusehen.
+            </p>
+            <div class="svc-tags">
+              <span class="svc-tag">React</span>
+              <span class="svc-tag">Node.js</span>
+              <span class="svc-tag">TypeScript</span>
+              <span class="svc-tag">MongoDB</span>
+            </div>
+          </div>
+
+          <div class="svc-card">
+            <div class="svc-num">04</div>
+            <h3 class="svc-title" data-i18n="svc_title4">
+              Komplexe Probleme lösen
+            </h3>
+            <p class="svc-desc" data-i18n="svc_desc4">
+              Wenn die Anforderung ungewöhnlich ist, bin ich besonders
+              interessiert. Ich denke quer und finde Lösungen, die andere
+              übersehen.
+            </p>
+            <div class="svc-tags">
+              <span class="svc-tag">Consulting</span>
+              <span class="svc-tag">Prototyping</span>
+              <span class="svc-tag">R&amp;D</span>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="svc-card">
-        <div class="svc-num">02</div>
-        <h3 class="svc-title" data-i18n="svc_title2">Architektur &amp; Technische Beratung</h3>
-        <p  class="svc-desc"  data-i18n="svc_desc2">Systemdesign und technische Führung für skalierbare, wartbare Software. Von der ersten Skizze bis zur Implementierung — klar und umsetzbar.</p>
-        <div class="svc-tags">
-          <span class="svc-tag">System Design</span>
-          <span class="svc-tag">API</span>
-          <span class="svc-tag">Cloud</span>
-          <span class="svc-tag">VHDL</span>
-        </div>
-      </div>
-
-      <div class="svc-card">
-        <div class="svc-num">03</div>
-        <h3 class="svc-title" data-i18n="svc_title3">Full-Stack-Webentwicklung</h3>
-        <p  class="svc-desc"  data-i18n="svc_desc3">Moderne Web-Apps mit React, Node.js, TypeScript und MongoDB. Schnell, sauber, wartbar — und gut anzusehen.</p>
-        <div class="svc-tags">
-          <span class="svc-tag">React</span>
-          <span class="svc-tag">Node.js</span>
-          <span class="svc-tag">TypeScript</span>
-          <span class="svc-tag">MongoDB</span>
-        </div>
-      </div>
-
-      <div class="svc-card">
-        <div class="svc-num">04</div>
-        <h3 class="svc-title" data-i18n="svc_title4">Komplexe Probleme lösen</h3>
-        <p  class="svc-desc"  data-i18n="svc_desc4">Wenn die Anforderung ungewöhnlich ist, bin ich besonders interessiert. Ich denke quer und finde Lösungen, die andere übersehen.</p>
-        <div class="svc-tags">
-          <span class="svc-tag">Consulting</span>
-          <span class="svc-tag">Prototyping</span>
-          <span class="svc-tag">R&amp;D</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════
+    <!-- ═══════════════════════════════════════════
      CONTACT
 ════════════════════════════════════════════ -->
-<section id="contact" class="section">
-  <div class="section-inner">
-    <div class="contact-inner">
+    <section id="contact" class="section">
+      <div class="section-inner">
+        <div class="contact-inner">
+          <div class="contact-left">
+            <p
+              class="section-label section-label--light"
+              data-i18n="contact_label"
+            >
+              Kontakt
+            </p>
+            <h2 class="section-heading section-heading--light">
+              <span class="sh-light" data-i18n="contact_h2_light">Bereit,</span>
+              <span class="sh-bold" data-i18n="contact_h2_bold"
+                >loszulegen?</span
+              >
+            </h2>
+            <p class="contact-tagline" data-i18n="contact_tagline">
+              Erzählen Sie mir von Ihrem Projekt. Ich melde mich innerhalb von
+              24 Stunden.
+            </p>
+            <a
+              href="mailto:info@christopherrehm.de"
+              class="btn-primary btn-primary--white"
+              data-i18n="contact_cta"
+              >E-Mail senden</a
+            >
+            <div class="contact-avail">
+              <span class="dot"></span>
+              <span data-i18n="contact_avail">Verfügbar für neue Projekte</span>
+            </div>
+          </div>
 
-      <div class="contact-left">
-        <p class="section-label section-label--light" data-i18n="contact_label">Kontakt</p>
-        <h2 class="section-heading section-heading--light">
-          <span class="sh-light" data-i18n="contact_h2_light">Bereit,</span>
-          <span class="sh-bold"  data-i18n="contact_h2_bold">loszulegen?</span>
-        </h2>
-        <p class="contact-tagline" data-i18n="contact_tagline">
-          Erzählen Sie mir von Ihrem Projekt. Ich melde mich innerhalb von 24 Stunden.
-        </p>
-        <a href="mailto:info@christopherrehm.de" class="btn-primary btn-primary--white" data-i18n="contact_cta">E-Mail senden</a>
-        <div class="contact-avail">
-          <span class="dot"></span>
-          <span data-i18n="contact_avail">Verfügbar für neue Projekte</span>
+          <div class="contact-right">
+            <ul class="contact-details">
+              <li>
+                <strong>Email</strong>
+                <a href="mailto:info@christopherrehm.de"
+                  >info@christopherrehm.de</a
+                >
+              </li>
+              <li>
+                <strong data-i18n="contact_loc_label">Standort</strong>
+                <span data-i18n="contact_loc">Klosterlechfeld, Bayern</span>
+              </li>
+              <li>
+                <strong>Remote</strong>
+                <span data-i18n="contact_remote">Weltweit verfügbar</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="contact-right">
-        <ul class="contact-details">
-          <li>
-            <strong>Email</strong>
-            <a href="mailto:info@christopherrehm.de">info@christopherrehm.de</a>
-          </li>
-          <li>
-            <strong data-i18n="contact_loc_label">Standort</strong>
-            <span data-i18n="contact_loc">Klosterlechfeld, Bayern</span>
-          </li>
-          <li>
-            <strong>Remote</strong>
-            <span data-i18n="contact_remote">Weltweit verfügbar</span>
-          </li>
-        </ul>
-      </div>
+    <!-- ── FOOTER ── -->
+    <footer>
+      <div class="logo-mark">CR</div>
+      <p class="footer-text">
+        © 2026 Christopher Rehm · Klosterlechfeld, Bayern
+      </p>
+      <a
+        href="legacy/index.html"
+        class="footer-legacy"
+        target="_blank"
+        rel="noopener"
+        >Original site →</a
+      >
+    </footer>
 
-    </div>
-  </div>
-</section>
-
-
-<!-- ── FOOTER ── -->
-<footer>
-  <div class="logo-mark">CR</div>
-  <p class="footer-text">© 2025 Christopher Rehm · Klosterlechfeld, Bayern</p>
-  <a href="legacy/index.html" class="footer-legacy" target="_blank" rel="noopener">Original site →</a>
-</footer>
-
-<!-- ── SCRIPTS ── -->
-<script src="js/flags.js"></script>
-<script src="js/i18n.js"></script>
-<script>
-  // Apply feature flags
-  if (!SHOW_WORK) {
-    document.getElementById('nav-work').style.display    = 'none';
-    document.getElementById('btn-see-work').style.display = 'none';
-  }
-  // Init language (German default)
-  setLang('de');
-</script>
-<script src="js/nav.js?v=2"></script>
-
-</body>
+    <!-- ── SCRIPTS ── -->
+    <script src="js/flags.js"></script>
+    <script src="js/i18n.js"></script>
+    <script>
+      // Apply feature flags
+      if (!SHOW_WORK) {
+        document.getElementById("nav-work").style.display = "none";
+        document.getElementById("btn-see-work").style.display = "none";
+      }
+      // Init language (German default)
+      setLang("de");
+    </script>
+    <script src="js/nav.js?v=2"></script>
+  </body>
 </html>

@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Useful Tools — Christopher Rehm</title>
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="A curated collection of tools, PDFs, and resources by Christopher Rehm — software engineer and consultant based in Bavaria. Includes practical guides on working with AI."
+    />
+    <link rel="canonical" href="https://www.christopherrehm.de/tools.html" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/variables.css?v=2" />
+    <link rel="stylesheet" href="css/layout.css?v=2" />
+    <link rel="stylesheet" href="css/components.css?v=2" />
+    <script
+      defer
+      src="https://stats.christopherrehm.de/script.js"
+      data-website-id="a13c24d2-0792-4c60-b8bf-d9b849015370"
+    ></script>
+    <style>
+      .tools-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .tools-list li {
+        padding: 20px 0;
+        border-bottom: 1px solid var(--rule, #2a2a2a);
+      }
+      .tools-list li:last-child {
+        border-bottom: none;
+      }
+      .tools-list a {
+        font-family: "Rajdhani", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--fg);
+        text-decoration: none;
+        display: block;
+        margin-bottom: 6px;
+        transition: color 0.2s;
+      }
+      .tools-list a:hover {
+        color: var(--vermillion, #e05c3a);
+      }
+      .tools-list .tool-desc {
+        font-family: "DM Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        color: var(--mid);
+      }
+      .tool-category {
+        font-family: "Rajdhani", sans-serif;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--mid);
+        margin: 40px 0 8px;
+      }
+      .tool-category:first-of-type {
+        margin-top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ── PHOTO STRIP ── -->
+    <div id="photo-strip">
+      <img
+        id="strip-img"
+        src="images/the-boat-houses-m.jpg"
+        alt="Bootshäuser in Bayern"
+        width="300"
+        height="200"
+      />
+    </div>
+
+    <!-- ── NAV ── -->
+    <nav id="main-nav">
+      <div class="logo-wrap">
+        <a
+          href="index.html"
+          style="
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+          "
+        >
+          <div class="logo-mark">CR</div>
+          <span class="logo-text">Christopher Rehm</span>
+        </a>
+      </div>
+      <ul>
+        <li><a href="index.html#contact" class="nav-cta">Kontakt</a></li>
+        <li><a href="index.html#about">Über mich</a></li>
+        <li><a href="index.html#services">Leistungen</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="ai-chats.html">KI-Gespräche</a></li>
+        <li><a href="tools.html" style="color: var(--vermillion)">Tools</a></li>
+        <li>
+          <a href="https://github.com/johnfire" target="_blank" rel="noopener"
+            >GitHub</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://artbychristopherrehm.com"
+            target="_blank"
+            rel="noopener"
+            >Art</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ── CONTENT ── -->
+    <div style="padding-top: calc(var(--strip-max) + var(--nav-h))">
+      <section class="section">
+        <div class="section-inner">
+          <div class="impressum-inner" style="max-width: 800px">
+            <p class="section-label">Resources &amp; Utilities</p>
+            <h2 class="section-heading">
+              <span class="sh-light">Useful</span
+              ><span class="sh-bold"> Tools</span>
+            </h2>
+            <p
+              style="
+                font-family: &quot;DM Sans&quot;, sans-serif;
+                font-size: 14px;
+                font-weight: 300;
+                color: var(--mid);
+                margin-bottom: 40px;
+              "
+            >
+              A collection of tools, files, and resources I find useful.
+            </p>
+
+            <ul class="tools-list">
+              <li>
+                <a
+                  href="tools/how-to-work-with-ai.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  >How to Work with AI</a
+                >
+                <span class="tool-desc"
+                  >PDF · A practical guide on working effectively with AI.</span
+                >
+              </li>
+              <li>
+                <a
+                  href="tools/swarm_intelligence_white_paper.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  >Swarm Intelligence — White Paper</a
+                >
+                <span class="tool-desc"
+                  >PDF · A white paper on swarm intelligence.</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ── FOOTER ── -->
+    <footer>
+      <div class="logo-mark">CR</div>
+      <p class="footer-text">
+        © 2026 Christopher Rehm · Klosterlechfeld, Bayern
+      </p>
+      <a href="index.html" class="footer-legacy">← Back</a>
+    </footer>
+
+    <script src="js/nav.js?v=2"></script>
+  </body>
+</html>
