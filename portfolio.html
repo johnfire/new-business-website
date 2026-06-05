@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio — Christopher Rehm</title>
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="Portfolio of Christopher Rehm — software engineer and consultant based in Bavaria. A collection of websites and projects."
+    />
+    <link
+      rel="canonical"
+      href="https://www.christopherrehm.de/portfolio.html"
+    />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/variables.css?v=2" />
+    <link rel="stylesheet" href="css/layout.css?v=2" />
+    <link rel="stylesheet" href="css/components.css?v=2" />
+    <script
+      defer
+      src="https://stats.christopherrehm.de/script.js"
+      data-website-id="1ec1a2d7-56e7-4a15-8587-045dc81ca4bf"
+    ></script>
+    <style>
+      .tools-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .tools-list li {
+        padding: 20px 0;
+        border-bottom: 1px solid var(--rule, #2a2a2a);
+      }
+      .tools-list li:last-child {
+        border-bottom: none;
+      }
+      .tools-list a {
+        font-family: "Rajdhani", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--fg);
+        text-decoration: none;
+        display: block;
+        margin-bottom: 6px;
+        transition: color 0.2s;
+      }
+      .tools-list a:hover {
+        color: var(--vermillion, #e05c3a);
+      }
+      .tools-list .tool-desc {
+        font-family: "DM Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        color: var(--mid);
+      }
+    </style>
+  </head>
+  <body style="display: flex; flex-direction: column; min-height: 100vh">
+    <!-- ── PHOTO STRIP ── -->
+    <div id="photo-strip">
+      <img
+        id="strip-img"
+        src="images/the-boat-houses-m.jpg"
+        alt="Bootshäuser in Bayern"
+        width="300"
+        height="200"
+      />
+    </div>
+
+    <!-- ── NAV ── -->
+    <nav id="main-nav">
+      <div class="logo-wrap">
+        <a
+          href="index.html"
+          style="
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+          "
+        >
+          <div class="logo-mark">CR</div>
+          <span class="logo-text">Christopher Rehm</span>
+        </a>
+      </div>
+      <div
+        id="lang-bar"
+        style="position: static; display: flex; gap: 8px; margin-left: 24px"
+      >
+        <button class="lang-btn active" onclick="setLang('de')">DE</button>
+        <button class="lang-btn" onclick="setLang('en')">EN</button>
+      </div>
+      <ul>
+        <li><a href="index.html#contact" class="nav-cta">Kontakt</a></li>
+        <li><a href="index.html#about">Über mich</a></li>
+        <li><a href="index.html#services">Leistungen</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="ai-chats.html">KI-Gespräche</a></li>
+        <li><a href="tools.html">Tools</a></li>
+        <li>
+          <a href="portfolio.html" style="color: var(--vermillion)"
+            >Portfolio</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/johnfire" target="_blank" rel="noopener"
+            >GitHub</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://artbychristopherrehm.com"
+            target="_blank"
+            rel="noopener"
+            >Art</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ── CONTENT ── -->
+    <div style="padding-top: calc(var(--strip-max) + var(--nav-h))">
+      <section class="section">
+        <div class="section-inner">
+          <div class="impressum-inner" style="max-width: 800px">
+            <p class="section-label">My Work</p>
+            <h2 class="section-heading">
+              <span class="sh-light">My</span
+              ><span class="sh-bold"> Portfolio</span>
+            </h2>
+            <p
+              style="
+                font-family: &quot;DM Sans&quot;, sans-serif;
+                font-size: 14px;
+                font-weight: 300;
+                color: var(--mid);
+                margin-bottom: 40px;
+              "
+            >
+              A collection of websites and projects I have worked on, these were
+              all built using Claude Code, and the Sonnet 4.6 or Opus models.
+            </p>
+
+            <ul class="tools-list">
+              <li>
+                <a
+                  href="https://flashkarte.christopherrehm.de/welcome"
+                  target="_blank"
+                  rel="noopener"
+                  >Flashkarte</a
+                >
+                <span class="tool-desc"
+                  >A web and Android app that allows the user to create decks of
+                  flashcards and use them for spaced repetition learning.</span
+                >
+              </li>
+              <li>
+                <a
+                  href="https://notes-world.christopherrehm.de"
+                  target="_blank"
+                  rel="noopener"
+                  >Notes World</a
+                >
+                <span class="tool-desc"
+                  >A note taking app that runs on the web and on your Android
+                  phone.</span
+                >
+              </li>
+              <li>
+                <a href="https://leguilde.art" target="_blank" rel="noopener"
+                  >LeGuilde</a
+                >
+                <span class="tool-desc"
+                  >A website that allows artists to set up their portfolio on
+                  the web for public viewing and contact with their fans. There
+                  are also two Android apps: one for artists to manage their
+                  portfolio, and one for collectors and fans to look at artists'
+                  works and contact the artists directly.</span
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/johnfire/general-crm"
+                  target="_blank"
+                  rel="noopener"
+                  >General CRM</a
+                >
+                <span class="tool-desc"
+                  >A general customer relationship management and lead finding
+                  system of agents for marketing projects.</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ── FOOTER ── -->
+    <footer style="margin-top: auto">
+      <div class="logo-mark">CR</div>
+      <p class="footer-text">
+        © 2026 Christopher Rehm · Klosterlechfeld, Bayern
+      </p>
+      <a href="index.html" class="footer-legacy">← Back</a>
+    </footer>
+
+    <script src="js/flags.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/nav.js?v=2"></script>
+  </body>
+</html>
