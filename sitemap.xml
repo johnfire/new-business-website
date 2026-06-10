@@ -1,22 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.christopherrehm.de/</loc>
+    <loc>https://christopherrehm.de/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.christopherrehm.de/tools.html</loc>
+    <loc>https://christopherrehm.de/portfolio.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://christopherrehm.de/tools.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.christopherrehm.de/ai-chats.html</loc>
+    <loc>https://christopherrehm.de/ai-chats.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.christopherrehm.de/impressum.html</loc>
+    <loc>https://christopherrehm.de/impressum.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
