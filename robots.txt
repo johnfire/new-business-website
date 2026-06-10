@@ -3,4 +3,4 @@ Disallow: /legacy/
 Disallow: /cv/
 Disallow: /files/
 
-Sitemap: https://christopherrehm.de/sitemap.xml
+Sitemap: https://www.christopherrehm.de/sitemap.xml

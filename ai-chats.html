@@ -10,6 +10,37 @@
       content="A curated collection of conversations with AI systems — Claude, Grok, and others. Topics include AI memory, autonomous agents, consciousness, and AI's impact on society. By Christopher Rehm."
     />
     <link rel="canonical" href="https://www.christopherrehm.de/ai-chats.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://www.christopherrehm.de/ai-chats.html"
+    />
+    <meta property="og:title" content="KI-Gespräche — Christopher Rehm" />
+    <meta
+      property="og:description"
+      content="A curated collection of conversations with AI systems — Claude, Grok, and others. Topics include AI memory, autonomous agents, consciousness, and AI's impact on society. By Christopher Rehm."
+    />
+    <meta
+      property="og:image"
+      content="https://www.christopherrehm.de/images/og-card.jpg"
+    />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:locale:alternate" content="en_GB" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="KI-Gespräche — Christopher Rehm" />
+    <meta
+      name="twitter:description"
+      content="A curated collection of conversations with AI systems — Claude, Grok, and others. Topics include AI memory, autonomous agents, consciousness, and AI's impact on society. By Christopher Rehm."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.christopherrehm.de/images/og-card.jpg"
+    />
+
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
@@ -80,7 +111,7 @@
       }
     </style>
   </head>
-  <body>
+  <body style="display: flex; flex-direction: column; min-height: 100vh">
     <!-- ── PHOTO STRIP ── -->
     <div id="photo-strip">
       <img
@@ -108,10 +139,19 @@
           <span class="logo-text">Christopher Rehm</span>
         </a>
       </div>
+      <div
+        id="lang-bar"
+        style="position: static; display: flex; gap: 8px; margin-left: 24px"
+      >
+        <button class="lang-btn active" onclick="setLang('de')">DE</button>
+        <button class="lang-btn" onclick="setLang('en')">EN</button>
+      </div>
       <ul>
         <li><a href="index.html#contact" class="nav-cta">Kontakt</a></li>
         <li><a href="index.html#about">Über mich</a></li>
         <li><a href="index.html#services">Leistungen</a></li>
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="impressum.html">Impressum</a></li>
         <li>
           <a href="ai-chats.html" style="color: var(--vermillion)"
@@ -143,10 +183,10 @@
             <p class="section-label">
               Künstliche Intelligenz · Artificial Intelligence
             </p>
-            <h2 class="section-heading">
+            <h1 class="section-heading">
               <span class="sh-light">KI-</span
               ><span class="sh-bold">Gespräche</span>
-            </h2>
+            </h1>
             <p
               style="
                 font-family: &quot;DM Sans&quot;, sans-serif;
@@ -229,7 +269,7 @@
     </div>
 
     <!-- ── FOOTER ── -->
-    <footer>
+    <footer style="margin-top: auto">
       <div class="logo-mark">CR</div>
       <p class="footer-text">
         © 2026 Christopher Rehm · Klosterlechfeld, Bayern
@@ -237,6 +277,8 @@
       <a href="index.html" class="footer-legacy">← Zurück</a>
     </footer>
 
+    <script src="js/flags.js"></script>
+    <script src="js/i18n.js"></script>
     <script src="js/nav.js?v=2"></script>
   </body>
 </html>
