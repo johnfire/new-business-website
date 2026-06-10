@@ -27,7 +27,7 @@
     />
     <meta
       property="og:image"
-      content="https://www.christopherrehm.de/images/og-christopher.jpg"
+      content="https://www.christopherrehm.de/images/og-card.jpg"
     />
     <meta property="og:locale" content="de_DE" />
     <meta property="og:locale:alternate" content="en_GB" />
@@ -44,7 +44,7 @@
     />
     <meta
       name="twitter:image"
-      content="https://www.christopherrehm.de/images/og-christopher.jpg"
+      content="https://www.christopherrehm.de/images/og-card.jpg"
     />
 
     <!-- Structured Data -->
@@ -90,11 +90,6 @@
   </head>
   <body>
     <!-- ── LANG TOGGLE ── -->
-    <div id="lang-bar">
-      <button class="lang-btn active" onclick="setLang('de')">DE</button>
-      <button class="lang-btn" onclick="setLang('en')">EN</button>
-    </div>
-
     <!-- ── PHOTO STRIP ── -->
     <div id="photo-strip">
       <img
@@ -109,8 +104,14 @@
     <!-- ── NAV ── -->
     <nav id="main-nav">
       <div class="logo-wrap">
-        <div class="logo-mark">CR</div>
-        <span class="logo-text">Christopher Rehm</span>
+        <a href="#" style="text-decoration: none; display: flex; align-items: center; gap: 12px;">
+          <div class="logo-mark">CR</div>
+          <span class="logo-text">Christopher Rehm</span>
+        </a>
+      </div>
+      <div id="lang-bar" style="position: static; display: flex; gap: 8px; margin-left: 24px;">
+        <button class="lang-btn active" onclick="setLang('de')">DE</button>
+        <button class="lang-btn" onclick="setLang('en')">EN</button>
       </div>
       <ul>
         <li>
@@ -119,6 +120,7 @@
         <li><a href="#about" data-i18n="nav_about">Über mich</a></li>
         <li><a href="#services" data-i18n="nav_services">Leistungen</a></li>
         <li id="nav-work"><a href="#work">Work</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
         <li>
           <a href="impressum.html" data-i18n="nav_impressum">Impressum</a>
         </li>

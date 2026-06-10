@@ -21,3 +21,5 @@ christopherrehm.de/
 *.JPEG
 # Exception: the photo strip image the new site needs
 !images/the-boat-houses-m.jpg
+# Exception: the branded social/OG card the new site needs
+!images/og-card.jpg
