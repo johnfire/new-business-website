@@ -7,7 +7,7 @@
     <meta name="robots" content="noindex, follow" />
     <link
       rel="canonical"
-      href="https://www.christopherrehm.de/impressum.html"
+      href="https://christopherrehm.de/impressum.html"
     />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -27,7 +27,7 @@
       data-website-id="4af6d62c-7d42-4e0c-8309-3e8711b5d195"
     ></script>
   </head>
-  <body>
+  <body style="display: flex; flex-direction: column; min-height: 100vh;">
     <!-- ── PHOTO STRIP ── -->
     <div id="photo-strip">
       <img
@@ -53,17 +53,32 @@
           <span class="logo-text">Christopher Rehm</span>
         </a>
       </div>
+      <div id="lang-bar" style="position: static; display: flex; gap: 8px; margin-left: 24px;">
+        <button class="lang-btn active" onclick="setLang('de')">DE</button>
+        <button class="lang-btn" onclick="setLang('en')">EN</button>
+      </div>
       <ul>
+        <li><a href="index.html#contact" class="nav-cta">Kontakt</a></li>
         <li><a href="index.html#about">Über mich</a></li>
         <li><a href="index.html#services">Leistungen</a></li>
-        <li>
-          <a href="impressum.html" style="color: var(--vermillion)"
-            >Impressum</a
-          >
-        </li>
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="impressum.html" style="color: var(--vermillion)">Impressum</a></li>
         <li><a href="ai-chats.html">KI-Gespräche</a></li>
         <li><a href="tools.html">Tools</a></li>
-        <li><a href="index.html#contact" class="nav-cta">Kontakt</a></li>
+        <li>
+          <a href="https://github.com/johnfire" target="_blank" rel="noopener"
+            >GitHub</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://artbychristopherrehm.com"
+            target="_blank"
+            rel="noopener"
+            >Art</a
+          >
+        </li>
       </ul>
     </nav>
 
@@ -145,8 +160,8 @@
                 ><br />
                 Tel.: +49 176 060154<br />
                 Impressum:
-                <a href="https://www.christopherrehm.de/impressum/"
-                  >https://www.christopherrehm.de/impressum/</a
+                <a href="https://christopherrehm.de/impressum/"
+                  >https://christopherrehm.de/impressum/</a
                 >
               </address>
               <p style="margin-top: 10px">
@@ -264,8 +279,8 @@
                 ><br />
                 Phone: +49 176 060154<br />
                 Imprint:
-                <a href="https://www.christopherrehm.de/impressum/"
-                  >https://www.christopherrehm.de/impressum/</a
+                <a href="https://christopherrehm.de/impressum/"
+                  >https://christopherrehm.de/impressum/</a
                 >
               </address>
               <p style="margin-top: 10px">
@@ -311,7 +326,7 @@
     </div>
 
     <!-- ── FOOTER ── -->
-    <footer>
+    <footer style="margin-top: auto;">
       <div class="logo-mark">CR</div>
       <p class="footer-text">
         © 2026 Christopher Rehm · Klosterlechfeld, Bayern
@@ -319,6 +334,8 @@
       <a href="index.html" class="footer-legacy">← Zurück</a>
     </footer>
 
+    <script src="js/flags.js"></script>
+    <script src="js/i18n.js"></script>
     <script src="js/nav.js?v=2"></script>
   </body>
 </html>
