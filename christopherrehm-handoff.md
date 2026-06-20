@@ -6,8 +6,9 @@ Personal consulting/portfolio site for Christopher Rehm — senior engineer, sof
 and working artist based in Klosterlechfeld, Bavaria. Target clients: startups and agile teams.
 Tone: approachable senior engineer, confident but warm, "fun and easy to work with".
 
-The reference file `hero-v2.html` is the fully built hero section. Use it as the single source
-of truth for all design decisions. Do not drift from it.
+The shipped site `index.html` is the single source of truth for all design decisions. Use it
+as the reference and do not drift from it. (The original prototype, `hero-v2.html`, is no longer
+in the repo — its design is fully implemented in `index.html` and the extracted `css/` + `js/`.)
 
 ---
 
@@ -100,12 +101,12 @@ animation: pulse 2s infinite;
 
 | Section | Status | Notes |
 |---|---|---|
-| Hero | ✅ Done | In `hero-v2.html` |
-| About | ⬜ To build | Bio, photo, background |
-| Services | ⬜ To build | Expand the 4 service items |
+| Hero | ✅ Done | In `index.html` (`#hero`) |
+| About | ✅ Shipped | In `index.html` (`#about`) — bio, background |
+| Services | ✅ Shipped | In `index.html` (`#services`) — the 4 service items |
 | Work | ⬜ To build | Hidden until ready — see feature flags |
-| Impressum | ⬜ To build | German legal requirement |
-| Contact | ⬜ To build | Form or mailto |
+| Impressum | ✅ Shipped | `impressum.html` (German legal requirement) |
+| Contact | ✅ Shipped | In `index.html` (`#contact`) |
 
 ### Navigation items (current order)
 
@@ -159,10 +160,10 @@ const TRANSLATIONS = {
 
 ---
 
-## Recommended refactor when scaling up
+## Current structure
 
-The hero is a single self-contained HTML file (good for prototyping). When building the full
-site, extract into:
+The prototype's single self-contained HTML file has been extracted into separate CSS and JS
+modules. This is the live layout:
 
 ```
 /css/
@@ -218,13 +219,14 @@ Angaben gemäß § 5 TMG:
 
 ## Photo assets
 
-The Bavaria boathouse photo is embedded as base64 in `hero-v2.html`.
-Original file: `the-boat-houses-m.jpg`
+The Bavaria boathouse photo is served from `images/the-boat-houses-m.jpg` (referenced by the
+photo strip in `index.html`).
 Object position: `center center`
 
 ---
 
 ## Reference file
 
-`hero-v2.html` — open this in a browser to see the live design before writing any new code.
-All decisions above are implemented there. When in doubt, inspect it.
+`index.html` — open this in a browser to see the live design before writing any new code.
+All decisions above are implemented there (with styles in `css/` and behaviour in `js/`).
+When in doubt, inspect it.
