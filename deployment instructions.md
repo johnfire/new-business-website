@@ -3,19 +3,19 @@
 ## Server Connection
 - **Host:** 82.165.32.162
 - **User:** claude
-- **SSH Key:** ~/.ssh/deploy_key
+- **SSH Key:** ~/.ssh/id_ed25519
 
 ## Web Root
 /var/www/christopherrehm.de/
 
 ## Upload Files
 ```bash
-scp -i ~/.ssh/deploy_key [filename] claude@82.165.32.162:/var/www/christopherrehm.de/
+scp -i ~/.ssh/id_ed25519 [filename] claude@82.165.32.162:/var/www/christopherrehm.de/
 ```
 
 ## Upload Multiple Files
 ```bash
-scp -i ~/.ssh/deploy_key file1.html file2.html file3.css claude@82.165.32.162:/var/www/christopherrehm.de/
+scp -i ~/.ssh/id_ed25519 file1.html file2.html file3.css claude@82.165.32.162:/var/www/christopherrehm.de/
 ```
 
 ## Verify Upload
@@ -31,7 +31,7 @@ ssh claude@82.165.32.162 "grep 'search_text' /var/www/christopherrehm.de/[filena
 ## Example: Deploy Portfolio Page
 ```bash
 # Upload both modified index.html and new portfolio.html
-scp -i ~/.ssh/deploy_key index.html portfolio.html claude@82.165.32.162:/var/www/christopherrehm.de/
+scp -i ~/.ssh/id_ed25519 index.html portfolio.html claude@82.165.32.162:/var/www/christopherrehm.de/
 
 # Verify
 ssh claude@82.165.32.162 "ls -la /var/www/christopherrehm.de/portfolio.html"
