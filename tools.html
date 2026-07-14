@@ -103,6 +103,45 @@
       .tool-category:first-of-type {
         margin-top: 0;
       }
+      .tools-list .tool-title {
+        font-family: "Rajdhani", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--dark);
+        display: block;
+        margin-bottom: 6px;
+      }
+      .doc-langs {
+        margin-top: 14px;
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+      }
+      .doc-lang {
+        font-family: "DM Sans", sans-serif;
+        font-size: 14px;
+        color: var(--mid);
+      }
+      .doc-lang .lang-name {
+        display: inline-block;
+        min-width: 92px;
+        font-weight: 500;
+        color: var(--dark);
+      }
+      .doc-lang a {
+        display: inline;
+        margin: 0;
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--vermillion);
+      }
+      .doc-lang a:hover {
+        text-decoration: underline;
+      }
+      .doc-lang .sep {
+        color: var(--mid);
+        margin: 0 8px;
+      }
     </style>
   </head>
   <body style="display: flex; flex-direction: column; min-height: 100vh">
@@ -187,9 +226,146 @@
                 margin-bottom: 40px;
               "
             >
-              A collection of tools, files, and resources I find useful.
+              A collection of tools, files, and downloadable guides — including
+              my own guides on building well with AI. Free to download and share.
             </p>
 
+            <p class="tool-category">Guides — Working with AI</p>
+            <ul class="tools-list">
+              <li>
+                <span class="tool-title">Building Well with AI</span>
+                <span class="tool-desc"
+                  >A step-by-step guide to building software, AI agents, and
+                  orchestrations in the order that produces better results.</span
+                >
+                <div class="doc-langs">
+                  <div class="doc-lang">
+                    <span class="lang-name">English</span>
+                    <a download href="tools/how-to-build/ai-build-guide-EN.pdf">PDF</a
+                    ><span class="sep">·</span
+                    ><a download href="tools/how-to-build/ai-build-guide-EN.md">Markdown</a>
+                  </div>
+                  <div class="doc-lang">
+                    <span class="lang-name">Deutsch</span>
+                    <a download href="tools/how-to-build/ai-build-guide-DE.pdf">PDF</a
+                    ><span class="sep">·</span
+                    ><a download href="tools/how-to-build/ai-build-guide-DE.md">Markdown</a>
+                  </div>
+                  <div class="doc-lang">
+                    <span class="lang-name">Farsi (فارسی)</span>
+                    <a download href="tools/how-to-build/ai-build-guide-FA.pdf">PDF</a
+                    ><span class="sep">·</span
+                    ><a download href="tools/how-to-build/ai-build-guide-FA.md">Markdown</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <span class="tool-title">The AI Build Playbook</span>
+                <span class="tool-desc"
+                  >A shorter field checklist — build software, agents, and
+                  orchestrations in the right order, with what to do and why at
+                  each step.</span
+                >
+                <div class="doc-langs">
+                  <div class="doc-lang">
+                    <span class="lang-name">English</span>
+                    <a download href="tools/how-to-build/ai-build-playbook-EN.pdf">PDF</a
+                    ><span class="sep">·</span
+                    ><a download href="tools/how-to-build/ai-build-playbook-EN.md">Markdown</a>
+                  </div>
+                  <div class="doc-lang">
+                    <span class="lang-name">Deutsch</span>
+                    <a download href="tools/how-to-build/ai-build-playbook-DE.pdf">PDF</a
+                    ><span class="sep">·</span
+                    ><a download href="tools/how-to-build/ai-build-playbook-DE.md">Markdown</a>
+                  </div>
+                  <div class="doc-lang">
+                    <span class="lang-name">Farsi (فارسی)</span>
+                    <a download href="tools/how-to-build/ai-build-playbook-FA.pdf">PDF</a
+                    ><span class="sep">·</span
+                    ><a download href="tools/how-to-build/ai-build-playbook-FA.md">Markdown</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <span class="tool-title">Using AI Without Getting Burned</span>
+                <span class="tool-desc"
+                  >A plain-English guide to getting good answers from AI — and
+                  spotting the bad ones. No jargon, no hype.</span
+                >
+                <div class="doc-langs">
+                  <div class="doc-lang">
+                    <span class="lang-name">English</span>
+                    <a download href="tools/how-to-build/using-ai-without-getting-burned.pdf">PDF</a
+                    ><span class="sep">·</span
+                    ><a download href="tools/how-to-build/using-ai-without-getting-burned.md">Markdown</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <p class="tool-category">Templates — AI Project Setup</p>
+            <ul class="tools-list">
+              <li>
+                <span class="tool-title">Intent &amp; Values Template</span>
+                <span class="tool-desc"
+                  >The philosophical foundation for a project — the compass an AI
+                  consults when instructions are unclear and tradeoffs must be
+                  made.</span
+                >
+                <div class="doc-langs">
+                  <div class="doc-lang">
+                    <a download href="tools/templates/intent-values-template.pdf">PDF</a
+                    ><span class="sep">·</span
+                    ><a download href="tools/templates/intent-values-template.md">Markdown</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <span class="tool-title">Project Context Document</span>
+                <span class="tool-desc"
+                  >A per-project context sheet to fill in before a session, so the
+                  AI builds from facts you supplied rather than guesses.</span
+                >
+                <div class="doc-langs">
+                  <div class="doc-lang">
+                    <a download href="tools/templates/project-context.pdf">PDF</a
+                    ><span class="sep">·</span
+                    ><a download href="tools/templates/project-context.md">Markdown</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <span class="tool-title">General Prompt Template</span>
+                <span class="tool-desc"
+                  >A fill-in structure for setting up a focused AI session — role,
+                  task, constraints, and success criteria.</span
+                >
+                <div class="doc-langs">
+                  <div class="doc-lang">
+                    <a download href="tools/templates/general-prompt-template.pdf">PDF</a
+                    ><span class="sep">·</span
+                    ><a download href="tools/templates/general-prompt-template.md">Markdown</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <span class="tool-title">Project File System Standard</span>
+                <span class="tool-desc"
+                  >A directory-and-file layout standard for Claude Code projects,
+                  designed for anti-fragility and clarity.</span
+                >
+                <div class="doc-langs">
+                  <div class="doc-lang">
+                    <a download href="tools/templates/car-standard-project-structure.pdf">PDF</a
+                    ><span class="sep">·</span
+                    ><a download href="tools/templates/car-standard-project-structure.md">Markdown</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <p class="tool-category">Other Resources</p>
             <ul class="tools-list">
               <li>
                 <a
