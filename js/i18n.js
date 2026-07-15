@@ -6,6 +6,7 @@ const TRANSLATIONS = {
     nav_services:       'Leistungen',
     nav_impressum:      'Impressum',
     nav_contact:        'Kontakt',
+    nav_blog:           'Aktuelles gibt es hier',
     // HERO
     availability:       'Verfügbar für neue Projekte · Bayern · Remote',
     h1_line1:           'Engineering das denkt.',
@@ -77,6 +78,7 @@ const TRANSLATIONS = {
     nav_services:       'Services',
     nav_impressum:      'Impressum',
     nav_contact:        'Get in Touch',
+    nav_blog:           'All the latest can be found here',
     // HERO
     availability:       'Available for new projects · Bavaria · Remote',
     h1_line1:           'Engineering that thinks.',

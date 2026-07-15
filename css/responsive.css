@@ -90,6 +90,12 @@
     padding: 12px 26px !important;
     border-bottom: none;
   }
+  #main-nav ul li a.nav-blog {
+    display: inline-block;
+    margin: 6px 0 14px;
+    padding: 10px 22px !important;
+    border-bottom: none;
+  }
 }
 
 /* ══════════════════════════════════════════════
