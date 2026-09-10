@@ -46,7 +46,9 @@ nav.scrolled { box-shadow: 0 2px 12px rgba(26,20,16,0.08); }
   padding-top: calc(var(--strip-max) + var(--nav-h));
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 30%;
+  /* 36% keeps the hero video ~450px wide on a typical laptop while leaving
+     the headline room to breathe. */
+  grid-template-columns: 1fr 36%;
 }
 
 .hero-left {
@@ -65,8 +67,9 @@ nav.scrolled { box-shadow: 0 2px 12px rgba(26,20,16,0.08); }
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 48px 40px;
+  justify-content: center;
+  gap: 32px;
+  padding: 48px 36px;
   opacity: 0;
   animation: fadeIn 0.8s 0.4s ease forwards;
 }

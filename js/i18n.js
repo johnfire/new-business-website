@@ -17,10 +17,10 @@ const TRANSLATIONS = {
     btn_see_work:       'Meine Arbeiten',
     scroll_hint:        'Scrollen zum Entdecken',
     card_label:         'Was ich baue',
-    svc1:               'KI-Agenten & Intelligente Werkzeuge',
-    svc2:               'Architektur & Technische Beratung',
-    svc3:               'Full-Stack-Webentwicklung',
-    svc4:               'Ein komplexes Problem? Ich löse es.',
+    svc1:               'Individuelle Anwendungen',
+    svc2:               'Prozessautomatisierung & KI-Agenten',
+    svc3:               'Sicherheitsprüfungen',
+    svc4:               'Individuelle Schulungen',
     quote:              '„Ich habe Netzwerkprozessoren bei Intel gebaut und Aquarelle in Bayern gemalt.<br>Beide Denkweisen bringe ich in Ihr Projekt."',
     // ABOUT
     about_label:        'Über mich',
@@ -49,14 +49,18 @@ const TRANSLATIONS = {
     services_label:     'Leistungen',
     services_h2_light:  'Was ich',
     services_h2_bold:   'für Sie baue.',
-    svc_title1:         'KI-Agenten & Intelligente Werkzeuge',
-    svc_desc1:          'Von der Konzeption bis zur Produktion: LLM-Integration, RAG-Systeme, autonome Pipelines und smarte Werkzeuge, die echte Aufgaben übernehmen.',
+    svc_title1:         'KI-Agenten & Prozessautomatisierung',
+    svc_desc1:          'Wiederkehrende Abläufe übernimmt eine Maschine: LLM-Integration, RAG-Systeme, autonome Pipelines und Werkzeuge, die echte Aufgaben erledigen statt nur Vorschläge zu machen.',
     svc_title2:         'Architektur & Technische Beratung',
     svc_desc2:          'Systemdesign und technische Führung für skalierbare, wartbare Software. Von der ersten Skizze bis zur Implementierung — klar und umsetzbar.',
     svc_title3:         'Full-Stack-Webentwicklung',
     svc_desc3:          'Moderne Web-Apps mit React, Node.js, TypeScript und MongoDB. Schnell, sauber, wartbar — und gut anzusehen.',
     svc_title4:         'Komplexe Probleme lösen',
     svc_desc4:          'Wenn die Anforderung ungewöhnlich ist, bin ich besonders interessiert. Ich denke quer und finde Lösungen, die andere übersehen.',
+    svc_title5:         'Sicherheitsprüfungen',
+    svc_desc5:          'Ich prüfe Websites, Anwendungen und jede Art von Datenspeicher auf Schwachstellen — bevor es jemand anderes tut. Zugriffsrechte und DSGVO-Technik inklusive.',
+    svc_title6:         'Individuelle Schulungen',
+    svc_desc6:          'Maßgeschneiderte Kurse für Ihr Team: KI im Arbeitsalltag, KI-gestütztes Programmieren und die Arbeit mit KI-Agenten. Danach kommen Sie allein weiter.',
     // CONTACT
     contact_label:      'Kontakt',
     contact_h2_light:   'Bereit,',
@@ -89,10 +93,10 @@ const TRANSLATIONS = {
     btn_see_work:       'See my work',
     scroll_hint:        'Scroll to explore',
     card_label:         'What I build',
-    svc1:               'AI Agents & Intelligent Tools',
-    svc2:               'Architecture & Technical Consulting',
-    svc3:               'Full Stack Web Development',
-    svc4:               'Got a complex problem? Let me solve it.',
+    svc1:               'Custom Applications',
+    svc2:               'Process Automation & AI Agents',
+    svc3:               'Security Testing',
+    svc4:               'Custom Training Courses',
     quote:              '"I\'ve built network processors at Intel and watercolors in Bavaria.<br>I bring both kinds of thinking to your project."',
     // ABOUT
     about_label:        'About',
@@ -121,14 +125,18 @@ const TRANSLATIONS = {
     services_label:     'Services',
     services_h2_light:  'What I',
     services_h2_bold:   'build for you.',
-    svc_title1:         'AI Agents & Intelligent Tools',
-    svc_desc1:          'From concept to production: LLM integration, RAG systems, autonomous pipelines, and smart tools that handle real tasks.',
+    svc_title1:         'AI Agents & Process Automation',
+    svc_desc1:          'A machine takes over the jobs that come back every week: LLM integration, RAG systems, autonomous pipelines, and tools that do real work instead of only making suggestions.',
     svc_title2:         'Architecture & Technical Consulting',
     svc_desc2:          'System design and technical leadership for scalable, maintainable software. From the first sketch to implementation — clear and actionable.',
     svc_title3:         'Full Stack Web Development',
     svc_desc3:          'Modern web apps with React, Node.js, TypeScript, and MongoDB. Fast, clean, maintainable — and good-looking.',
     svc_title4:         'Complex Problem Solving',
     svc_desc4:          'When the requirement is unusual, I\'m most interested. I think laterally and find solutions others miss.',
+    svc_title5:         'Security Testing',
+    svc_desc5:          'I test websites, applications and any kind of data storage for vulnerabilities — before someone else does. Access control and GDPR technical checks included.',
+    svc_title6:         'Custom Training Courses',
+    svc_desc6:          'Tailored courses for your team: using AI day to day, AI-assisted coding, and working with AI agents. Afterwards you can carry on without me.',
     // CONTACT
     contact_label:      'Contact',
     contact_h2_light:   'Ready to',
@@ -171,5 +179,9 @@ function setLang(lang) {
   });
 
   document.documentElement.lang = lang;
+
+  // Announce the change so language-aware widgets (hero video) can react
+  // without i18n needing to know they exist.
+  document.dispatchEvent(new CustomEvent('langchange', { detail: { lang } }));
 }
 // ────────────────────────────────────────────────

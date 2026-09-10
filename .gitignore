@@ -23,3 +23,6 @@ christopherrehm.de/
 !images/the-boat-houses-m.jpg
 # Exception: the branded social/OG card the new site needs
 !images/og-card.jpg
+# Exception: hero intro-video posters (served locally so no request reaches
+# Google before the visitor clicks play)
+!images/video/*.jpg

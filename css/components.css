@@ -556,3 +556,88 @@ footer .logo-mark {
   50%  { left: 0%; }
   100% { left: 100%; }
 }
+
+/* ── HERO VIDEO (click-to-load) ── */
+.hero-video {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 520px;
+  margin-bottom: 28px;
+}
+.hero-video .hv-facade,
+.hero-video .hv-player {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 1px solid rgba(255,255,255,0.22);
+  background: rgba(26,20,16,0.35);
+}
+.hv-player { border-width: 0; }
+
+.hv-facade {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.hv-facade:hover,
+.hv-facade:focus-visible {
+  border-color: rgba(255,255,255,0.6);
+  transform: translateY(-2px);
+}
+
+.hv-poster {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Slightly dimmed so the play button and caption stay legible. */
+  filter: brightness(0.82);
+  transition: filter 0.2s, transform 0.4s;
+}
+.hv-facade:hover .hv-poster { filter: brightness(0.95); transform: scale(1.03); }
+
+/* Play triangle, drawn rather than shipped as an asset. */
+.hv-play {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 62px; height: 62px;
+  border-radius: 50%;
+  background: rgba(26,20,16,0.72);
+  border: 2px solid rgba(255,255,255,0.85);
+  transition: background 0.2s;
+}
+.hv-play::after {
+  content: '';
+  position: absolute;
+  top: 50%; left: 54%;
+  transform: translate(-50%, -50%);
+  border-style: solid;
+  border-width: 11px 0 11px 18px;
+  border-color: transparent transparent transparent #fff;
+}
+.hv-facade:hover .hv-play { background: var(--vermillion, rgba(26,20,16,0.9)); }
+
+.hv-caption {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 10px 14px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #fff;
+  background: linear-gradient(transparent, rgba(26,20,16,0.75));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hv-facade,
+  .hv-poster { transition: none; }
+  .hv-facade:hover { transform: none; }
+  .hv-facade:hover .hv-poster { transform: none; }
+}
