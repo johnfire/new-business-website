@@ -21,6 +21,7 @@ const TRANSLATIONS = {
     svc2:               'Prozessautomatisierung & KI-Agenten',
     svc3:               'Sicherheitsprüfungen',
     svc4:               'Individuelle Schulungen',
+    svc5:               'Ein Problem? Ich finde eine Lösung.',
     quote:              '„Ich habe Netzwerkprozessoren bei Intel gebaut und Aquarelle in Bayern gemalt.<br>Beide Denkweisen bringe ich in Ihr Projekt."',
     // ABOUT
     about_label:        'Über mich',
@@ -97,6 +98,7 @@ const TRANSLATIONS = {
     svc2:               'Process Automation & AI Agents',
     svc3:               'Security Testing',
     svc4:               'Custom Training Courses',
+    svc5:               'Have a problem? I can find a solution.',
     quote:              '"I\'ve built network processors at Intel and watercolors in Bavaria.<br>I bring both kinds of thinking to your project."',
     // ABOUT
     about_label:        'About',
