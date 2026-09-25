@@ -1,6 +1,6 @@
 # Christopher Rehm — Engineering & Consulting
 
-> Christopher Rehm is a senior software engineer, architect, and working artist based in Klosterlechfeld, Bavaria, Germany. Six services: AI agents & process automation; architecture & technical consulting; full-stack web development; complex problem solving; security testing; custom AI training courses. Available for remote projects worldwide. Contact: info@christopherrehm.de.
+> Christopher Rehm is a senior software engineer, architect, and working artist based in Klosterlechfeld, Bavaria, Germany. Six services: AI agents & process automation; architecture & technical consulting; full-stack web development; complex problem solving; security testing; custom AI training courses. Available for remote projects worldwide. Contact: car2187bus@pm.me.
 
 The Markdown pages below are the authoritative, clean versions of this site's content. Each one mirrors an HTML page of the same name. The human site is bilingual (German default, English toggle); the Markdown pages are in English unless noted.
 
@@ -26,6 +26,6 @@ The Markdown pages below are the authoritative, clean versions of this site's co
 
 ## Optional
 
-- [Impressum / Legal notice](/impressum.md): Legal service-provider details required under German law (address, VAT, dispute resolution)
+- [Impressum / Legal notice](/impressum.md): Legal service-provider details required under German law (address, contact, dispute resolution)
 - [Art by Christopher Rehm](https://artbychristopherrehm.com): His art site (separate website)
 - [GitHub](https://github.com/johnfire): Public code

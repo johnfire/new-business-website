@@ -2,11 +2,11 @@
 
 Human page: <https://christopherrehm.de/impressum.html>
 
-The German text is the legally binding version (required by German law, § 5 TMG). An English translation follows for convenience.
+The German text is the legally binding version (required by German law, § 5 DDG). An English translation follows for convenience.
 
 ## Deutsch
 
-### Angaben gemäß § 5 TMG
+### Angaben gemäß § 5 DDG
 
 Christopher Rehm
 Rehm Consulting
@@ -17,17 +17,7 @@ Deutschland
 ### Kontakt
 
 - Tel.: [+49 176 82060154](tel:+4917682060154)
-- E-Mail: [info@christopherrehm.de](mailto:info@christopherrehm.de)
-
-### Umsatzsteuer-Identifikationsnummer
-
-- USt-IdNr.: 42/135/02685
-- Berufsbezeichnung: web apps, software
-- Verleihungsstaat: Deutschland
-
-### Aufsichtsbehörde
-
-Augsburg
+- E-Mail: [car2187bus@pm.me](mailto:car2187bus@pm.me)
 
 ### Datenschutz Verantwortlicher
 
@@ -35,9 +25,9 @@ Christopher Rehm, Alpenstr. 3, 86836 Klosterlechfeld, Deutschland. Kontakt wie o
 
 Vertretungsberechtigter: Christopher Rehm
 
-### Universalschlichtungsstelle
+### Verbraucherstreitbeilegung
 
-An einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle nehmen wir teil. Die zuständige Stelle ist die Universalschlichtungsstelle des Bundes, Zentrum für Schlichtung e.V., Straßburger Straße 8, 77694 Kehl am Rhein (<https://www.verbraucher-schlichter.de>).
+Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
 
 ### Bildernachweis
 
@@ -52,17 +42,7 @@ Christopher Rehm, Rehm Consulting, Alpenstr. 3, 86836 Klosterlechfeld, Germany.
 ### Contact
 
 - Phone: [+49 176 82060154](tel:+4917682060154)
-- Email: [info@christopherrehm.de](mailto:info@christopherrehm.de)
-
-### VAT
-
-- VAT number: 42/135/02685
-- Professional designation: web apps, software
-- Granting state: Germany
-
-### Supervisory authority
-
-Augsburg
+- Email: [car2187bus@pm.me](mailto:car2187bus@pm.me)
 
 ### Data protection controller
 
@@ -70,7 +50,7 @@ Christopher Rehm, same address and contact as above. Authorized representative: 
 
 ### Consumer dispute resolution
 
-Christopher Rehm participates in dispute resolution before a consumer arbitration board: the Universal Arbitration Board of the Federal Government (Universalschlichtungsstelle des Bundes), Zentrum für Schlichtung e.V., Straßburger Straße 8, 77694 Kehl am Rhein (<https://www.verbraucher-schlichter.de>).
+We are neither willing nor obliged to take part in dispute resolution proceedings before a consumer arbitration board.
 
 ### Picture credits
 

@@ -4,7 +4,7 @@ Human page: <https://christopherrehm.de/> (German by default, English via the la
 
 Senior engineer and architect with deep roots in hardware, full stack development, and AI tooling. Based in Klosterlechfeld, Bavaria, Germany. Available for new projects, on site in Bavaria or remote worldwide.
 
-- **Email:** [info@christopherrehm.de](mailto:info@christopherrehm.de) — replies within 24 hours
+- **Email:** [car2187bus@pm.me](mailto:car2187bus@pm.me) — replies within 24 hours
 - **Intro video (90 seconds):** [English](https://youtu.be/AMyBZBL3nUE) · [German](https://youtu.be/HjNTXOYGww4) · YouTube channel: <https://www.youtube.com/channel/UCKPqIB0RgUstOFJ7DzkjCKA>
 - **Latest news and posts:** [LinkedIn activity](https://www.linkedin.com/in/rehm-ai-consulting/recent-activity/all/)
 
@@ -81,7 +81,7 @@ Tell him about your project; he replies within 24 hours.
 
 | | |
 | --- | --- |
-| Email | [info@christopherrehm.de](mailto:info@christopherrehm.de) |
+| Email | [car2187bus@pm.me](mailto:car2187bus@pm.me) |
 | Location | Klosterlechfeld, Bavaria, Germany |
 | Remote | Available worldwide |
 
