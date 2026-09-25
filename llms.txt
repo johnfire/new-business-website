@@ -1,0 +1,31 @@
+# Christopher Rehm — Engineering & Consulting
+
+> Christopher Rehm is a senior software engineer, architect, and working artist based in Klosterlechfeld, Bavaria, Germany. He builds AI agents and process automation, full-stack web applications, and does security testing, technical consulting, and custom AI training. Available for remote projects worldwide. Contact: info@christopherrehm.de.
+
+The Markdown pages below are the authoritative, clean versions of this site's content. Each one mirrors an HTML page of the same name. The human site is bilingual (German default, English toggle); the Markdown pages are in English unless noted.
+
+## Main pages
+
+- [Home](/index.md): Who Christopher is, background and qualifications, the six services offered, and how to get in touch
+- [Portfolio](/portfolio.md): Live products he has built (Flashkarte, Notes World, LeGuilde, General CRM), all with MCP connections for AI agents
+- [Tools](/tools.md): Free guides and templates for building software and agents with AI, with links to their Markdown sources
+- [AI conversations](/ai-chats.md): A curated list of shared conversations with Claude and Grok on AI agents, memory, consciousness, and society
+
+## Guides (full text, Markdown)
+
+- [Building Well with AI](/tools/how-to-build/ai-build-guide-EN.md): Step-by-step guide to building software, AI agents, and orchestrations in the right order
+- [The AI Build Playbook](/tools/how-to-build/ai-build-playbook-EN.md): Shorter field checklist of the same build order, with what to do and why
+- [Using AI Without Getting Burned](/tools/how-to-build/using-ai-without-getting-burned.md): Plain-English guide to getting good answers from AI and spotting bad ones
+
+## Templates (full text, Markdown)
+
+- [Intent & Values Template](/tools/templates/intent-values-template.md): A project's value compass for an AI to consult when instructions are unclear
+- [Project Context Document](/tools/templates/project-context.md): Per-project fact sheet to fill in before an AI session
+- [General Prompt Template](/tools/templates/general-prompt-template.md): Role, task, constraints, and success criteria for a focused AI session
+- [Project File System Standard](/tools/templates/car-standard-project-structure.md): Directory and file layout standard for Claude Code projects
+
+## Optional
+
+- [Impressum / Legal notice](/impressum.md): Legal service-provider details required under German law (address, VAT, dispute resolution)
+- [Art by Christopher Rehm](https://artbychristopherrehm.com): His art site (separate website)
+- [GitHub](https://github.com/johnfire): Public code

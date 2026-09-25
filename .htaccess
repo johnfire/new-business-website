@@ -3,3 +3,7 @@ RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ 
 RewriteEngine On 
 RewriteCond %{SERVER_PORT} 80 
 RewriteRule ^(.*)$ https://christopherrehm.de/$1 [R=301,L]
+
+# AI-agent Markdown copies and llms.txt: declare UTF-8 so umlauts survive.
+AddType text/markdown .md
+AddCharset UTF-8 .md .txt

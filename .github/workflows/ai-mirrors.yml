@@ -1,0 +1,14 @@
+name: AI mirrors
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check llms.txt and Markdown copies match the HTML site
+        run: python3 scripts/check_ai_mirrors.py
