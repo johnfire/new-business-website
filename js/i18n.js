@@ -62,6 +62,10 @@ const TRANSLATIONS = {
     svc_desc5:          'Ich prüfe Websites, Anwendungen und jede Art von Datenspeicher auf Schwachstellen — bevor es jemand anderes tut. Zugriffsrechte und DSGVO-Technik inklusive.',
     svc_title6:         'Individuelle Schulungen',
     svc_desc6:          'Maßgeschneiderte Kurse für Ihr Team: KI im Arbeitsalltag, KI-gestütztes Programmieren und die Arbeit mit KI-Agenten. Danach kommen Sie allein weiter.',
+    // PRODUCTS
+    products_label:     'Eigene Produkte',
+    products_h2_light:  'Produkte,',
+    products_h2_bold:   'die ich gebaut habe.',
     // CONTACT
     contact_label:      'Kontakt',
     contact_h2_light:   'Bereit,',
@@ -139,6 +143,10 @@ const TRANSLATIONS = {
     svc_desc5:          'I test websites, applications and any kind of data storage for vulnerabilities — before someone else does. Access control and GDPR technical checks included.',
     svc_title6:         'Custom Training Courses',
     svc_desc6:          'Tailored courses for your team: using AI day to day, AI-assisted coding, and working with AI agents. Afterwards you can carry on without me.',
+    // PRODUCTS
+    products_label:     'Products I\'ve Built',
+    products_h2_light:  'Products',
+    products_h2_bold:   'I\'ve built.',
     // CONTACT
     contact_label:      'Contact',
     contact_h2_light:   'Ready to',
