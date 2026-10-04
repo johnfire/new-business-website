@@ -6,6 +6,12 @@ A collection of websites and projects Christopher Rehm has worked on. All were b
 
 All of them have MCP (Model Context Protocol) connections and can be used by your AI agents. The goal is products that work seamlessly in the AI world. For details, email [car2187bus@pm.me](mailto:car2187bus@pm.me).
 
+## Featured products
+
+- [LearnWohl](https://learnwohl.app) — flashcards and courses
+- [LeGuilde](https://leguilde.art) — portfolio websites for artists
+- [Notes World](https://notes-world.app) — note-taking app
+
 ## Projects
 
 | Project | Platforms | What it does |

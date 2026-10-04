@@ -75,6 +75,12 @@ Tailored courses for your team: using AI day to day, AI-assisted coding, and wor
 
 Keywords: AI fundamentals, AI coding, AI agents, in-house.
 
+## Products he has built
+
+- [LearnWohl](https://learnwohl.app) — flashcards and courses
+- [LeGuilde](https://leguilde.art) — portfolio websites for artists
+- [Notes World](https://notes-world.app) — note-taking app
+
 ## Contact
 
 Tell him about your project; he replies within 24 hours.
