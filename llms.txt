@@ -8,6 +8,7 @@ The Markdown pages below are the authoritative, clean versions of this site's co
 
 - [Home](/index.md): Who Christopher is, background and qualifications, the six services offered, and how to get in touch
 - [Portfolio](/portfolio.md): Live products he has built (Flashkarte, Notes World, LeGuilde, General CRM), all with MCP connections for AI agents
+- [Certifications](/certifications.md): Anthropic (Claude, MCP, AI Fluency), Udemy and Kaggle course certificates, each with a PDF copy and, where available, the issuer's verification link
 - [Tools](/tools.md): Free guides and templates for building software and agents with AI, with links to their Markdown sources
 - [AI conversations](/ai-chats.md): A curated list of shared conversations with Claude and Grok on AI agents, memory, consciousness, and society
 

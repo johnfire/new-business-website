@@ -94,6 +94,7 @@ Tell him about your project; he replies within 24 hours.
 ## Related pages
 
 - [Portfolio](/portfolio.md) — products he has built
+- [Certifications](/certifications.md) — course certificates with verification links
 - [Tools](/tools.md) — free guides and templates
 - [AI conversations](/ai-chats.md)
 - [Impressum / legal notice](/impressum.md)

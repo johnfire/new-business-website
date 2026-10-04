@@ -27,6 +27,14 @@ service or background title is missing from `index.md`, or `llms.txt` has a brok
 links and titles, not every sentence, so reworded prose still needs a human eye. Deploy the `.md`
 files, `llms.txt`, and `.htaccess` along with the HTML.
 
+## Certificates
+
+`certifications.html` lists course certificates. The PDFs live in `certificates/` (images in
+`certificates/img/`) under stable names like `certificates/udemy-nestjs.pdf`. **Never rename or
+move these files** — their URLs are pasted into external profiles (freelancer.com etc.). To add a
+certificate, add the PDF and a `.webp` image there, a card in `certifications.html`, its lines in
+the plain-text list at the bottom of that page, and a row in `certifications.md`.
+
 ## Archived / not documentation
 
 - `older-docs/` — superseded docs kept for provenance (e.g. the old Markdown homepage draft,
