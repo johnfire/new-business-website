@@ -4,7 +4,7 @@ Human page: <https://christopherrehm.de/portfolio.html>
 
 A collection of websites and projects Christopher Rehm has worked on. All were built using Claude Code with the Sonnet 4.6 or Opus models.
 
-All of them have MCP (Model Context Protocol) connections and can be used by your AI agents. The goal is products that work seamlessly in the AI world. For details, email [car2187bus@pm.me](mailto:car2187bus@pm.me).
+All of them have MCP (Model Context Protocol) connections and are optimized so that your AI agent can interface directly with the various tools and work with them to accomplish whatever you wish to accomplish. All of the software is highly AI-friendly, and if there is anything that would make it friendlier, let Christopher know; he will provide it as long as it is not a security risk. Email [car2187bus@pm.me](mailto:car2187bus@pm.me).
 
 ## Featured products
 
