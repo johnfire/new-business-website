@@ -12,11 +12,13 @@ All of them have MCP (Model Context Protocol) connections and can be used by you
 - [LeGuilde](https://leguilde.art) — portfolio websites for artists
 - [Notes World](https://notes-world.app) — note-taking app
 
-## Currently underway, nearing completion
+## Currently underway, nearing public deployment
 
 Coming soon — not yet available to the public.
 
 - **EngCRM** — AI outreach CRM. Five agents in one pipeline: Research finds businesses on the map, Enrich fills in website and email, Scout scores each one for fit, Outreach drafts a personal email, Follow-up reads replies and nudges later. The user approves every email.
+- **Process Analysis** — a web app that helps optimize human processes and speed them up with AI in the right places: find the steps that shouldn't exist, then apply AI only where it counts.
+- **Circuit Lab** — an electronics design platform where your own AI helps build whatever you're building, with real SPICE (ngspice) simulation for analog and digital circuits.
 
 ## Projects
 

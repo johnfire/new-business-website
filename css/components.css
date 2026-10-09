@@ -473,14 +473,12 @@ h1 {
   transform: none;
   box-shadow: none;
 }
+.products-grid--soon { align-items: start; }
 .soon-badge {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  padding: 3px 10px;
-  border-radius: 999px;
-  background: rgba(10,9,6,0.8);
-  border: 1px solid #d4af55;
+  padding: 6px 10px;
+  text-align: center;
+  background: rgba(10,9,6,0.92);
+  border-top: 1px solid #d4af55;
   color: #e8c76a;
   font-family: "DM Sans", sans-serif;
   font-size: 12px;
