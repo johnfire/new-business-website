@@ -27,4 +27,4 @@ Coming soon — not yet available to the public.
 | [Flashkarte](https://flashkarte.christopherrehm.de/welcome) | Web, Android | Create decks of flashcards and use them for spaced-repetition learning. |
 | [Notes World](https://notes-world.christopherrehm.de) | Web, Android | A note-taking app. |
 | [LeGuilde](https://leguilde.art) | Web, two Android apps | Artists set up a public web portfolio and stay in contact with fans. One Android app lets artists manage their portfolio; the other lets collectors and fans browse artists' works and contact the artists directly. |
-| [General CRM](https://github.com/johnfire/general-crm) | Source on GitHub | A general customer-relationship-management and lead-finding system of agents for marketing projects. |
+| [EngCRM](https://github.com/johnfire/general-crm) | Source on GitHub | A general customer-relationship-management and lead-finding system of agents for marketing projects and businesses. |

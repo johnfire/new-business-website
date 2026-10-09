@@ -447,6 +447,16 @@ h1 {
   height: auto;
 }
 
+/* Portfolio page: use the screen width, with a relative side margin */
+.section-inner.section-inner--wide {
+  max-width: none;
+  padding-inline: clamp(22px, 5vw, 75px);
+}
+.portfolio-inner { max-width: none; }
+.section-inner--wide .products-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+}
+
 .projects-divider {
   border: 0;
   border-top: 1px solid rgba(26,20,16,0.15);
