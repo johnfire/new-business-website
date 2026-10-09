@@ -24,8 +24,8 @@ Coming soon — not yet available to the public.
 
 | Project | Platforms | What it does |
 | --- | --- | --- |
-| [Flashkarte](https://flashkarte.christopherrehm.de/welcome) | Web, Android | Create decks of flashcards and use them for spaced-repetition learning. |
-| [Notes World](https://notes-world.christopherrehm.de) | Web, Android | A note-taking app. |
+| [LearnWohl](https://learnwohl.app) | Web, Android | Create flashcard decks and complete courses, using AI if you wish, and share them with coworkers, friends, company employees, and the rest of your school. |
+| [Notes World](https://notes-world.christopherrehm.de) | Web, Android | An organization app, completely AI compatible and ready to work with your AI to organize and manage your tasks, notes, ideas, projects, and everything else you do. |
 | [LeGuilde](https://leguilde.art) | Web, two Android apps | Artists set up a public web portfolio and stay in contact with fans. One Android app lets artists manage their portfolio; the other lets collectors and fans browse artists' works and contact the artists directly. |
 | [EngCRM](https://github.com/johnfire/general-crm) | Source on GitHub | A general customer-relationship-management and lead-finding system of agents for marketing projects and businesses. |
 | Process Analysis | Coming soon | A method for finding the steps in a business process that shouldn't exist, rather than just making them faster: it maps how work really flows, finds the waiting time, removes steps that exist only out of habit, and adds AI only where it helps. |
