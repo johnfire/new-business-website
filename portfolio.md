@@ -28,3 +28,5 @@ Coming soon — not yet available to the public.
 | [Notes World](https://notes-world.christopherrehm.de) | Web, Android | A note-taking app. |
 | [LeGuilde](https://leguilde.art) | Web, two Android apps | Artists set up a public web portfolio and stay in contact with fans. One Android app lets artists manage their portfolio; the other lets collectors and fans browse artists' works and contact the artists directly. |
 | [EngCRM](https://github.com/johnfire/general-crm) | Source on GitHub | A general customer-relationship-management and lead-finding system of agents for marketing projects and businesses. |
+| Process Analysis | Coming soon | A method for finding the steps in a business process that shouldn't exist, rather than just making them faster: it maps how work really flows, finds the waiting time, removes steps that exist only out of habit, and adds AI only where it helps. |
+| Circuit Lab | Coming soon | An electronics design platform where your own AI helps you build your circuit, with real SPICE (ngspice) simulation for analog and digital designs, built with embedded projects such as the Raspberry Pi in mind. |

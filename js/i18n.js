@@ -93,6 +93,8 @@ const TRANSLATIONS = {
     pf_notes_desc:      'Eine Notiz-App für das Web und Ihr Android-Handy.',
     pf_leguilde_desc:   'Eine Website, auf der Künstler ihr Portfolio online präsentieren und mit ihren Fans in Kontakt treten können. Dazu gibt es zwei Android-Apps: eine für Künstler zur Verwaltung ihres Portfolios und eine für Sammler und Fans, um die Werke der Künstler anzuschauen und sie direkt zu kontaktieren.',
     pf_crm_desc:        'Ein allgemeines Customer-Relationship-Management- und Lead-Finding-System aus Agenten für Marketingprojekte und Unternehmen.',
+    pf_pa_desc:         'Eine Methode, um die Schritte in einem Geschäftsprozess zu finden, die es gar nicht geben sollte, statt sie nur zu beschleunigen. Sie zeigt, wie die Arbeit wirklich fließt, deckt die Wartezeiten zwischen den Schritten auf und streicht Schritte, die nur aus Gewohnheit existieren. KI kommt erst dann zum Einsatz, wo sie wirklich etwas bringt, nicht an jedem Schritt.',
+    pf_cl_desc:         'Eine Plattform für den Elektronikentwurf, auf der Ihre eigene KI mitbaut, was auch immer Sie entwickeln. Schaltungen werden mit echter SPICE-Simulation geprüft (ngspice-Kurven statt Schätzungen), analog wie digital, vom RC-Filter bis zum Logikgatter. Gedacht ist sie auch für Embedded-Projekte wie den Raspberry Pi.',
     pf_back:            '← Zurück',
     // IMPRESSUM
     impressum_label:    'Rechtliches',
@@ -192,6 +194,8 @@ const TRANSLATIONS = {
     pf_notes_desc:      'A note taking app that runs on the web and on your Android phone.',
     pf_leguilde_desc:   'A website that allows artists to set up their portfolio on the web for public viewing and contact with their fans. There are also two Android apps: one for artists to manage their portfolio, and one for collectors and fans to look at artists\' works and contact the artists directly.',
     pf_crm_desc:        'A general customer relationship management and lead finding system of agents for marketing projects and businesses.',
+    pf_pa_desc:         'A method for finding the steps in a business process that shouldn\'t exist, rather than just making them faster. It maps how work really flows, finds the waiting time between steps, and removes the steps that only exist out of habit. AI is then added only at the points where it actually helps, not bolted onto every step.',
+    pf_cl_desc:         'An electronics design platform where your own AI helps you build whatever you are building. Circuits are checked with real SPICE simulation (ngspice waveforms, not guesses), for analog and digital designs from RC filters to logic gates. It\'s built with embedded projects such as the Raspberry Pi in mind.',
     pf_back:            '← Back',
     // IMPRESSUM (legal notice stays in German by law — label only translates)
     impressum_label:    'Legal',
