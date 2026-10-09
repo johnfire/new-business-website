@@ -12,6 +12,12 @@ All of them have MCP (Model Context Protocol) connections and can be used by you
 - [LeGuilde](https://leguilde.art) — portfolio websites for artists
 - [Notes World](https://notes-world.app) — note-taking app
 
+## Currently underway, nearing completion
+
+Coming soon — not yet available to the public.
+
+- **EngCRM** — AI outreach CRM. Five agents in one pipeline: Research finds businesses on the map, Enrich fills in website and email, Scout scores each one for fit, Outreach drafts a personal email, Follow-up reads replies and nudges later. The user approves every email.
+
 ## Projects
 
 | Project | Platforms | What it does |

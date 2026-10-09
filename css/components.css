@@ -447,6 +447,47 @@ h1 {
   height: auto;
 }
 
+.projects-divider {
+  border: 0;
+  border-top: 1px solid rgba(26,20,16,0.15);
+  margin: 8px 0 32px;
+}
+.projects-subheading {
+  font-family: "DM Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  color: var(--mid);
+  margin-bottom: 8px;
+}
+.projects-subnote {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  color: var(--mid);
+  margin-bottom: 20px;
+}
+.product-card--soon {
+  position: relative;
+  margin: 0;
+}
+.product-card--soon:hover {
+  transform: none;
+  box-shadow: none;
+}
+.soon-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgba(10,9,6,0.8);
+  border: 1px solid #d4af55;
+  color: #e8c76a;
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
 /* ── CONTACT SECTION ── */
 #contact { background: var(--vermillion); }
 
