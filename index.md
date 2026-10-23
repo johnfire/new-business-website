@@ -2,7 +2,7 @@
 
 Human pages: German <https://christopherrehm.de/> · English <https://christopherrehm.de/en/> (same content in both).
 
-Christopher Rehm is a senior software engineer and AI consultant in Klosterlechfeld near Augsburg, Bavaria, Germany (business name: Rehm Consulting). He automates business processes with AI agents, builds web applications, and tests systems for security gaps — on site in Bavaria or remotely, worldwide. Works in German and English.
+Christopher Rehm is a senior software engineer and AI consultant in Klosterlechfeld near Augsburg, Bavaria, Germany (Freiberufler, trading as Rehm Consulting). He automates business processes with AI agents, builds web applications, and tests systems for security gaps — on site in Bavaria or remotely, worldwide. Works in German and English.
 
 - **Email:** [car2187bus@pm.me](mailto:car2187bus@pm.me) — replies within 24 hours
 - **Intro video (90 seconds):** [English](https://youtu.be/AMyBZBL3nUE) · [German](https://youtu.be/HjNTXOYGww4) · YouTube channel: <https://www.youtube.com/channel/UCKPqIB0RgUstOFJ7DzkjCKA>
