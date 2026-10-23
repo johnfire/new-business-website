@@ -1,4 +1,8 @@
 // ── TRANSLATIONS ────────────────────────────────
+// Source text for the German (/) and English (/en/) versions of index.html and
+// portfolio.html. Read at build time by scripts/build_language_pages.py, which
+// fills every data-i18n / data-i18n-attr element; browsers never load this file.
+// After editing, run: python3 scripts/build_language_pages.py
 const TRANSLATIONS = {
   de: {
     // NAV
@@ -22,7 +26,7 @@ const TRANSLATIONS = {
     svc3:               'Sicherheitsprüfungen',
     svc4:               'Individuelle Schulungen',
     svc5:               'Ein Problem? Ich finde eine Lösung.',
-    quote:              '„Ich habe Netzwerkprozessoren bei Intel gebaut und Aquarelle in Bayern gemalt.<br>Beide Denkweisen bringe ich in Ihr Projekt."',
+    quote:              '„Ich habe Netzwerkprozessoren bei Intel gebaut und Aquarelle in Bayern gemalt.<br>Beide Denkweisen bringe ich in Ihr Projekt.“',
     // ABOUT
     about_label:        'Über mich',
     about_h2_light:     'Ingenieur.',
@@ -99,6 +103,31 @@ const TRANSLATIONS = {
     // IMPRESSUM
     impressum_label:    'Rechtliches',
     impressum_heading:  'Impressum',
+    // PAGE META, IMAGES AND SMALL LABELS
+    meta_title:         'Christopher Rehm – KI-Berater & Softwareentwickler bei Augsburg',
+    meta_description:   'Softwareentwickler und KI-Berater bei Augsburg: KI-Agenten, Prozessautomatisierung, Web-Anwendungen und Sicherheitsprüfungen für Unternehmen in Bayern – vor Ort oder remote.',
+    pf_meta_title:      'Portfolio — Christopher Rehm, KI-Berater bei Augsburg',
+    pf_meta_description:'Portfolio von Christopher Rehm, Softwareentwickler und KI-Berater bei Augsburg: Web-Apps, KI-Agenten und CRM-Systeme, alle mit MCP-Anbindung für KI-Agenten.',
+    strip_img_alt:      'Bootshäuser in Bayern',
+    nav_menu_label:     'Menü',
+    nav_certifications: 'Zertifikate',
+    nav_ai_chats:       'KI-Gespräche',
+    hero_video_url:     'https://youtu.be/HjNTXOYGww4',
+    hero_video_poster:  '/images/video/intro-de.jpg',
+    hero_video_label:   'Intro-Video ansehen — 90 Sekunden',
+    tag_automation:     'Automatisierung',
+    tag_gdpr:           'DSGVO',
+    tag_ai_basics:      'KI-Grundlagen',
+    tag_ai_coding:      'KI-Coding',
+    tag_ai_agents:      'KI-Agenten',
+    tag_inhouse:        'Inhouse',
+    alt_learnwohl:      'LearnWohl — Karteikarten und Kurse',
+    alt_leguilde:       'LeGuilde — Portfolio-Websites für Künstler',
+    alt_notes_world:    'Notes World — Notizen-App',
+    alt_engcrm:         'EngCRM — KI-Outreach-CRM: fünf Agenten (Recherche, Anreicherung, Scout, Outreach, Nachfassen) in einer Pipeline. Sie geben jede E-Mail frei.',
+    alt_process_analysis:'Process Analysis — menschliche Abläufe optimieren und an den richtigen Stellen mit KI beschleunigen.',
+    alt_circuit_lab:    'Circuit Lab — KI-gestütztes Elektronikdesign: Ihre eigene KI hilft beim Schaltungsentwurf, mit echter SPICE-Simulation.',
+    footer_legacy:      'Alte Website →',
   },
 
   en: {
@@ -200,38 +229,33 @@ const TRANSLATIONS = {
     // IMPRESSUM (legal notice stays in German by law — label only translates)
     impressum_label:    'Legal',
     impressum_heading:  'Impressum',
+    // PAGE META, IMAGES AND SMALL LABELS
+    meta_title:         'Christopher Rehm – AI consultant & software engineer near Augsburg, Germany',
+    meta_description:   'Software engineer and AI consultant near Augsburg, Germany: AI agents, process automation, web applications and security testing — on site in Bavaria or remotely, worldwide.',
+    pf_meta_title:      'Portfolio — Christopher Rehm, AI consultant near Augsburg',
+    pf_meta_description:'Portfolio of Christopher Rehm, software engineer and AI consultant near Augsburg, Germany: web apps, AI agents and CRM systems, all with MCP connections for AI agents.',
+    strip_img_alt:      'Boat houses in Bavaria',
+    nav_menu_label:     'Menu',
+    nav_certifications: 'Certifications',
+    nav_ai_chats:       'AI chats',
+    hero_video_url:     'https://youtu.be/AMyBZBL3nUE',
+    hero_video_poster:  '/images/video/intro-en.jpg',
+    hero_video_label:   'Watch the intro video — 90 seconds',
+    tag_automation:     'Automation',
+    tag_gdpr:           'GDPR',
+    tag_ai_basics:      'AI basics',
+    tag_ai_coding:      'AI coding',
+    tag_ai_agents:      'AI agents',
+    tag_inhouse:        'In-house',
+    alt_learnwohl:      'LearnWohl — flashcards and courses',
+    alt_leguilde:       'LeGuilde — portfolio websites for artists',
+    alt_notes_world:    'Notes World — note taking app',
+    alt_engcrm:         'EngCRM — AI outreach CRM: five agents (research, enrich, scout, outreach, follow-up) in one pipeline. You approve every email.',
+    alt_process_analysis:'Process Analysis — optimize human processes and speed them up with AI in the right places.',
+    alt_circuit_lab:    'Circuit Lab — AI-assisted electronics design: your own AI helps build your circuit, with real SPICE simulation.',
+    footer_legacy:      'Original site →',
   },
 
   // ── ADD NEW LANGUAGES HERE ──
   // fr: { ... }  copy 'en' block as template
 };
-
-let currentLang = 'de';
-
-function setLang(lang) {
-  if (!TRANSLATIONS[lang]) return;
-  currentLang = lang;
-  const t = TRANSLATIONS[lang];
-
-  document.querySelectorAll('[data-i18n]').forEach(el => {
-    const key = el.getAttribute('data-i18n');
-    if (t[key] !== null && t[key] !== undefined) {
-      el.innerHTML = t[key];
-    }
-  });
-
-  // Feature-flagged element — translate even if hidden
-  const btnWork = document.getElementById('btn-see-work');
-  if (btnWork) btnWork.textContent = t.btn_see_work;
-
-  document.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.getAttribute('onclick').includes("'" + lang + "'"));
-  });
-
-  document.documentElement.lang = lang;
-
-  // Announce the change so language-aware widgets (hero video) can react
-  // without i18n needing to know they exist.
-  document.dispatchEvent(new CustomEvent('langchange', { detail: { lang } }));
-}
-// ────────────────────────────────────────────────

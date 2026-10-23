@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="pf_meta_title">Portfolio — Christopher Rehm, AI consultant near Augsburg</title>
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description" data-i18n-attr="content:pf_meta_description"
+      content="Portfolio of Christopher Rehm, software engineer and AI consultant near Augsburg, Germany: web apps, AI agents and CRM systems, all with MCP connections for AI agents."
+    />
+    <link
+      rel="canonical"
+      href="https://christopherrehm.de/en/portfolio.html"
+    />
+    <!-- hreflang:start -->
+    <link rel="alternate" hreflang="de" href="https://christopherrehm.de/portfolio.html" />
+    <link rel="alternate" hreflang="en" href="https://christopherrehm.de/en/portfolio.html" />
+    <link rel="alternate" hreflang="x-default" href="https://christopherrehm.de/portfolio.html" />
+    <!-- hreflang:end -->
+    <!-- AI agents: clean Markdown copy of this page, and the site guide -->
+    <link rel="alternate" type="text/markdown" href="/portfolio.md" />
+    <link rel="describedby" href="/llms.txt" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://christopherrehm.de/en/portfolio.html"
+    />
+    <meta property="og:title" data-i18n-attr="content:pf_meta_title" content="Portfolio — Christopher Rehm, AI consultant near Augsburg" />
+    <meta
+      property="og:description" data-i18n-attr="content:pf_meta_description"
+      content="Portfolio of Christopher Rehm, software engineer and AI consultant near Augsburg, Germany: web apps, AI agents and CRM systems, all with MCP connections for AI agents."
+    />
+    <meta
+      property="og:image"
+      content="https://christopherrehm.de/images/og-card.jpg"
+    />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:locale:alternate" content="de_DE" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" data-i18n-attr="content:pf_meta_title" content="Portfolio — Christopher Rehm, AI consultant near Augsburg" />
+    <meta
+      name="twitter:description" data-i18n-attr="content:pf_meta_description"
+      content="Portfolio of Christopher Rehm, software engineer and AI consultant near Augsburg, Germany: web apps, AI agents and CRM systems, all with MCP connections for AI agents."
+    />
+    <meta
+      name="twitter:image"
+      content="https://christopherrehm.de/images/og-card.jpg"
+    />
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Fonts are self-hosted: no request reaches Google before consent. -->
+    <link rel="preload" href="/fonts/rajdhani-700-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/css/fonts.css?v=1" />
+    <link rel="stylesheet" href="/css/variables.css?v=2" />
+    <link rel="stylesheet" href="/css/layout.css?v=3" />
+    <link rel="stylesheet" href="/css/components.css?v=6" />
+    <link rel="stylesheet" href="/css/responsive.css?v=4" />
+    <script
+      defer
+      src="https://stats.christopherrehm.de/script.js"
+      data-website-id="1ec1a2d7-56e7-4a15-8587-045dc81ca4bf"
+    ></script>
+    <style>
+      .tools-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 480px), 1fr));
+        column-gap: 48px;
+      }
+      .tools-list li {
+        padding: 20px 0;
+        border-bottom: 1px solid var(--rule, #2a2a2a);
+      }
+      .tools-list li:last-child {
+        border-bottom: none;
+      }
+      .tools-list a,
+      .tools-list .tool-name {
+        font-family: "Rajdhani", sans-serif;
+        font-size: 36px;
+        font-weight: 500;
+        color: var(--fg);
+        text-decoration: none;
+        display: block;
+        margin-bottom: 6px;
+        transition: color 0.2s;
+      }
+      .tools-list a:hover {
+        color: var(--vermillion, #e05c3a);
+      }
+      .tools-list .tool-desc {
+        font-family: "DM Sans", sans-serif;
+        font-size: 28px;
+        font-weight: 300;
+        color: var(--mid);
+      }
+    </style>
+  </head>
+  <body style="display: flex; flex-direction: column; min-height: 100vh">
+    <!-- ── PHOTO STRIP ── -->
+    <div id="photo-strip">
+      <img
+        id="strip-img"
+        src="/images/the-boat-houses-m.jpg"
+        alt="Boat houses in Bavaria" data-i18n-attr="alt:strip_img_alt"
+        width="300"
+        height="200"
+      />
+    </div>
+
+    <!-- ── NAV ── -->
+    <nav id="main-nav">
+      <div class="logo-wrap">
+        <a
+          href="/en/"
+          style="
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+          "
+        >
+          <div class="logo-mark">CR</div>
+          <span class="logo-text">Christopher Rehm</span>
+        </a>
+      </div>
+      <div
+        id="lang-bar"
+        style="position: static; display: flex; gap: 8px; margin-left: 24px"
+      >
+        <a class="lang-btn" data-lang-switch="de" href="/portfolio.html" hreflang="de" lang="de">DE</a>
+        <a class="lang-btn active" data-lang-switch="en" href="/en/portfolio.html" hreflang="en" lang="en" aria-current="page">EN</a>
+      </div>
+      <button class="nav-toggle" type="button" aria-label="Menu" data-i18n-attr="aria-label:nav_menu_label" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="nav-menu">
+        <li><a href="/en/#contact" class="nav-cta" data-i18n="nav_contact">Get in Touch</a></li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/rehm-ai-consulting/recent-activity/all/"
+            class="nav-blog"
+            data-i18n="nav_blog"
+            target="_blank"
+            rel="noopener"
+            >All the latest can be found here</a
+          >
+        </li>
+        <li><a href="/en/#about" data-i18n="nav_about">About</a></li>
+        <li><a href="/en/#services" data-i18n="nav_services">Services</a></li>
+        <li><a href="/impressum.html" data-i18n="nav_impressum">Impressum</a></li>
+        <li><a href="/ai-chats.html" data-i18n="nav_chats">AI Chats</a></li>
+        <li><a href="/tools.html" data-i18n="nav_tools">Tools</a></li>
+        <li>
+          <a href="/en/portfolio.html" style="color: var(--vermillion)" data-i18n="nav_portfolio"
+            >Portfolio</a
+          >
+        </li>
+        <li><a href="/certifications.html" data-i18n="nav_certs">Certifications</a></li>
+        <li>
+          <a href="https://github.com/johnfire" target="_blank" rel="noopener"
+            >GitHub</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://artbychristopherrehm.com"
+            target="_blank"
+            rel="noopener"
+            >Art</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/channel/UCKPqIB0RgUstOFJ7DzkjCKA"
+            target="_blank"
+            rel="noopener"
+            >YT Channel</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ── CONTENT ── -->
+    <main style="padding-top: calc(var(--strip-max) + var(--nav-h))">
+      <section class="section">
+        <div class="section-inner section-inner--wide">
+          <div class="impressum-inner portfolio-inner">
+            <p class="section-label" data-i18n="pf_label">My Work</p>
+            <h1 class="section-heading">
+              <span class="sh-light" data-i18n="pf_h1_light">My</span
+              ><span class="sh-bold" data-i18n="pf_h1_bold"> Portfolio</span>
+            </h1>
+            <p
+              style="
+                font-family: &quot;DM Sans&quot;, sans-serif;
+                font-size: 28px;
+                font-weight: 300;
+                color: var(--mid);
+                margin-bottom: 24px;
+              "
+              data-i18n="pf_intro1"
+            >A collection of websites and projects I have worked on, these were all built using Claude Code, and the Sonnet 4.6 or Opus models.</p>
+            <p
+              style="
+                font-family: &quot;DM Sans&quot;, sans-serif;
+                font-size: 28px;
+                font-weight: 300;
+                color: var(--mid);
+                margin-bottom: 40px;
+              "
+              data-i18n="pf_intro2"
+            >All of these have MCP connections and are optimized so that your AI agent can interface directly with the various tools and work with them to accomplish whatever you wish to accomplish. All of my software is highly AI-friendly, and if there is anything I can do to make it friendlier, let me know. I will be happy to provide it, as long as it is not a security risk. Email me for more details.</p>
+
+            <div class="products-grid" style="margin-bottom: 40px">
+              <a
+                class="product-card"
+                href="https://learnwohl.app"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="/images/learnwohl-banner.png"
+                  alt="LearnWohl — flashcards and courses" data-i18n-attr="alt:alt_learnwohl"
+                  width="375"
+                  height="150"
+                  loading="lazy"
+                />
+              </a>
+              <a
+                class="product-card"
+                href="https://leguilde.art"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="/images/leguilde-banner.png"
+                  alt="LeGuilde — portfolio websites for artists" data-i18n-attr="alt:alt_leguilde"
+                  width="375"
+                  height="150"
+                  loading="lazy"
+                />
+              </a>
+              <a
+                class="product-card"
+                href="https://notes-world.app"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="/images/notes-world-banner.png"
+                  alt="Notes World — note taking app" data-i18n-attr="alt:alt_notes_world"
+                  width="375"
+                  height="150"
+                  loading="lazy"
+                />
+              </a>
+            </div>
+
+            <hr class="projects-divider" />
+            <h2 class="projects-subheading" data-i18n="pf_soon_h">Currently underway, nearing public deployment</h2>
+            <p class="projects-subnote" data-i18n="pf_soon_note">Coming soon — not yet available to the public.</p>
+            <div class="products-grid products-grid--soon" style="margin-bottom: 40px">
+              <figure class="product-card product-card--soon">
+                <img
+                  src="/images/engcrm-banner.webp"
+                  alt="EngCRM — AI outreach CRM: five agents (research, enrich, scout, outreach, follow-up) in one pipeline. You approve every email." data-i18n-attr="alt:alt_engcrm"
+                  width="375"
+                  height="300"
+                  loading="lazy"
+                />
+                <figcaption class="soon-badge" data-i18n="pf_badge">Coming soon</figcaption>
+              </figure>
+              <figure class="product-card product-card--soon">
+                <img
+                  src="/images/process-analysis-banner.webp"
+                  alt="Process Analysis — optimize human processes and speed them up with AI in the right places." data-i18n-attr="alt:alt_process_analysis"
+                  width="375"
+                  height="240"
+                  loading="lazy"
+                />
+                <figcaption class="soon-badge" data-i18n="pf_badge">Coming soon</figcaption>
+              </figure>
+              <figure class="product-card product-card--soon">
+                <img
+                  src="/images/circuit-lab-banner.webp"
+                  alt="Circuit Lab — AI-assisted electronics design: your own AI helps build your circuit, with real SPICE simulation." data-i18n-attr="alt:alt_circuit_lab"
+                  width="375"
+                  height="240"
+                  loading="lazy"
+                />
+                <figcaption class="soon-badge" data-i18n="pf_badge">Coming soon</figcaption>
+              </figure>
+            </div>
+
+            <ul class="tools-list">
+              <li>
+                <a
+                  href="https://learnwohl.app"
+                  target="_blank"
+                  rel="noopener"
+                  >LearnWohl</a
+                >
+                <span class="tool-desc" data-i18n="pf_flash_desc"
+                  >A web and Android app that allows the user to create flashcard decks and complete courses, using AI if the user wishes, and to share them with coworkers, friends, company employees, and the rest of their school.</span
+                >
+              </li>
+              <li>
+                <a
+                  href="https://notes-world.christopherrehm.de"
+                  target="_blank"
+                  rel="noopener"
+                  >Notes World</a
+                >
+                <span class="tool-desc" data-i18n="pf_notes_desc"
+                  >An organization app that runs on the web and on your Android phone. It is completely AI compatible and ready to work with your AI to help organize and manage your tasks, notes, ideas, projects, and all the other stuff that you do.</span
+                >
+              </li>
+              <li>
+                <a href="https://leguilde.art" target="_blank" rel="noopener"
+                  >LeGuilde</a
+                >
+                <span class="tool-desc" data-i18n="pf_leguilde_desc"
+                  >A website that allows artists to set up their portfolio on the web for public viewing and contact with their fans. There are also two Android apps: one for artists to manage their portfolio, and one for collectors and fans to look at artists' works and contact the artists directly.</span
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/johnfire/general-crm"
+                  target="_blank"
+                  rel="noopener"
+                  >EngCRM</a
+                >
+                <span class="tool-desc" data-i18n="pf_crm_desc"
+                  >A general customer relationship management and lead finding system of agents for marketing projects and businesses.</span
+                >
+              </li>
+              <li>
+                <span class="tool-name">Process Analysis</span>
+                <span class="tool-desc" data-i18n="pf_pa_desc"
+                  >A method for finding the steps in a business process that shouldn't exist, rather than just making them faster. It maps how work really flows, finds the waiting time between steps, and removes the steps that only exist out of habit. AI is then added only at the points where it actually helps, not bolted onto every step.</span
+                >
+              </li>
+              <li>
+                <span class="tool-name">Circuit Lab</span>
+                <span class="tool-desc" data-i18n="pf_cl_desc"
+                  >An electronics design platform where your own AI helps you build whatever you are building. Circuits are checked with real SPICE simulation (ngspice waveforms, not guesses), for analog and digital designs from RC filters to logic gates. It's built with embedded projects such as the Raspberry Pi in mind.</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ── FOOTER ── -->
+    <footer style="margin-top: auto">
+      <div class="logo-mark">CR</div>
+      <p class="footer-text">
+        © 2026 Christopher Rehm · Klosterlechfeld, Bayern
+      </p>
+      <a href="/en/" class="footer-legacy" data-i18n="pf_back">← Back</a>
+    </footer>
+
+    <script src="/js/flags.js"></script>
+    <script src="/js/nav.js?v=3"></script>
+  </body>
+</html>

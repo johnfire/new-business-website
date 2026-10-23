@@ -13,6 +13,13 @@ behaviour in `js/`.
 - **[deployment instructions.md](<deployment instructions.md>)** — deploy runbook: how to
   upload files to the server and verify them.
 
+## Languages (German at `/`, English at `/en/`)
+
+`index.html` and `portfolio.html` are German templates; `en/index.html` and `en/portfolio.html` are
+generated from them plus `js/i18n.js` by `python3 scripts/build_language_pages.py` (never edit `en/`
+by hand). Run it after any change to those pages or to `i18n.js`, and commit both. CI fails if they
+are out of date. Details: [christopherrehm-handoff.md](christopherrehm-handoff.md#internationalisation-i18n).
+
 ## AI-agent layer
 
 Agents start at [`llms.txt`](llms.txt) — a short curated map of the site. Each public HTML page
@@ -20,8 +27,8 @@ has a clean Markdown copy next to it (`index.md`, `portfolio.md`, `tools.md`, `a
 `impressum.md`), advertised in its `<head>` with `rel="alternate" type="text/markdown"` and
 `rel="describedby" href="/llms.txt"`.
 
-**When you change a page's content, update its `.md` copy in the same commit.** English strings for
-the homepage live in `js/i18n.js`. `python3 scripts/check_ai_mirrors.py` (also run in CI) fails if
+**When you change a page's content, update its `.md` copy in the same commit.** German and English
+strings for the homepage and portfolio live in `js/i18n.js`. `python3 scripts/check_ai_mirrors.py` (also run in CI) fails if
 a link in a page's `<main>` is missing from its Markdown copy, a head link is missing, an English
 service or background title is missing from `index.md`, or `llms.txt` has a broken link. It checks
 links and titles, not every sentence, so reworded prose still needs a human eye. Deploy the `.md`

@@ -18,6 +18,9 @@
   cursor: pointer;
   transition: background 0.15s, color 0.15s, border-color 0.15s;
   border-radius: 2px;
+  display: inline-block;
+  text-decoration: none;
+  line-height: normal;
 }
 .lang-btn:hover { background: var(--dark); color: var(--cream); border-color: var(--dark); }
 .lang-btn.active { background: var(--vermillion); color: #fff; border-color: var(--vermillion); }

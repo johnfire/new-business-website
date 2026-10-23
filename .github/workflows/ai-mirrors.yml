@@ -12,3 +12,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Check llms.txt and Markdown copies match the HTML site
         run: python3 scripts/check_ai_mirrors.py
+      - name: Language pages (/ and /en/) are generated from the current templates
+        run: python3 scripts/build_language_pages.py --check
+      - name: Unit and integration tests for the page builder
+        run: python3 -m unittest discover -s tests -v

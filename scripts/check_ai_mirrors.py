@@ -30,8 +30,8 @@ def local_path(url):
     if not url.startswith("/"):
         return None
     path = url.split("#")[0].split("?")[0]
-    if path == "/":
-        path = "/index.html"
+    if path.endswith("/"):
+        path += "index.html"
     return ROOT / path.lstrip("/")
 
 
@@ -95,13 +95,18 @@ def main():
 
     check_local_links(ROOT / "llms.txt", problems)
     for page in sitemap_pages():
-        md_file = page.with_suffix(".md")
+        # English pages under /en/ share the Markdown copy of their German page, and
+        # their <main> links are generated from the same template, so the link check
+        # runs once, on the German page.
+        is_language_copy = page.parent != ROOT
+        md_file = ROOT / page.with_suffix(".md").name
         if not md_file.is_file():
             problems.append(f"{page.name}: no Markdown copy at {md_file.name}")
             continue
         check_local_links(md_file, problems)
         check_head_links(page, "/" + md_file.name, problems)
-        check_main_links(page, md_file, problems)
+        if not is_language_copy:
+            check_main_links(page, md_file, problems)
 
     index_md = (ROOT / "index.md").read_text(encoding="utf-8")
     for title in english_titles():

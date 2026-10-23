@@ -9,12 +9,12 @@
 const HERO_VIDEOS = {
   de: {
     id:     'HjNTXOYGww4',
-    poster: 'images/video/intro-de.jpg',
+    poster: '/images/video/intro-de.jpg',
     label:  'Intro-Video ansehen — 90 Sekunden',
   },
   en: {
     id:     'AMyBZBL3nUE',
-    poster: 'images/video/intro-en.jpg',
+    poster: '/images/video/intro-en.jpg',
     label:  'Watch the intro video — 90 seconds',
   },
 };
@@ -43,8 +43,7 @@ function playHeroVideo(lang) {
   frame.replaceChildren(iframe);
 }
 
-// Return the frame to its poster state — also stops playback, which is what
-// we want when the visitor switches language mid-video.
+// Put the frame in its poster state with a click-to-play handler.
 function resetHeroVideo(lang) {
   const frame = heroVideoFrame();
   const cfg = HERO_VIDEOS[lang];
@@ -85,4 +84,5 @@ function resetHeroVideo(lang) {
   frame.replaceChildren(link);
 }
 
-document.addEventListener('langchange', (ev) => resetHeroVideo(ev.detail.lang));
+// Each language has its own page (/ and /en/), so the page language picks the video.
+resetHeroVideo(document.documentElement.lang === 'en' ? 'en' : 'de');

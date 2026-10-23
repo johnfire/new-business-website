@@ -129,34 +129,44 @@ Use the same pattern for any other sections not yet ready.
 
 ## Internationalisation (i18n)
 
-**Default language: German (DE)**. English (EN) toggle button appears top-right.
+**German (DE) is the default and lives at the site root; English (EN) lives under `/en/`.**
+Since 2026-10-23 each language is its own static page, so search engines and AI crawlers
+(which do not run JavaScript) index both. `index.html` and `portfolio.html` are bilingual;
+`/en/index.html` and `/en/portfolio.html` are **generated — never edit them by hand**.
+The other pages (certifications, tools, ai-chats, impressum) are single-language; their
+DE/EN switch just links to `/` and `/en/`.
 
 ### How it works
 
-All translatable text nodes carry a `data-i18n="key"` attribute. The `setLang(lang)` function
-iterates all of them and swaps innerHTML from the `TRANSLATIONS` object.
+`scripts/build_language_pages.py` reads `js/i18n.js` (the `TRANSLATIONS` object, evaluated
+with node) and treats each root page as the template:
 
-```js
-const TRANSLATIONS = {
-  de: { nav_about: 'Über mich', ... },
-  en: { nav_about: 'About', ... },
-  // Add here: fr: { ... }, cs: { ... }
-};
-```
+- `data-i18n="key"` → the element's inner HTML is set from the translation
+- `data-i18n-attr="alt:key; src:key2"` → those attributes are set (meta descriptions, alt
+  texts, the intro-video link and poster)
+- `data-lang-switch="de"` → rebuilt as the link to that language version of the page
+- `<!-- hreflang:start -->…<!-- hreflang:end -->` → rewritten with the hreflang links;
+  canonical, `og:url`, `og:locale` and `<html lang>` are set per language
+- in `/en/` pages, relative links are rewritten (`portfolio.html` → `/en/portfolio.html`,
+  `css/…` → `/css/…`)
 
-### Adding a new language
-
-1. Add a new key block to `TRANSLATIONS` — copy `en` as a template.
-2. Add a button to `#lang-bar`:
-   ```html
-   <button class="lang-btn" onclick="setLang('fr')">FR</button>
-   ```
-3. That's it — everything else wires up automatically.
+It rewrites the German root page too (idempotent) and writes the English copy. A missing key
+in any language fails the build. CI runs it with `--check` and fails if a generated page is
+stale. Browsers never load `i18n.js`.
 
 ### Adding new translatable strings
 
-1. Add `data-i18n="your_key"` to the HTML element.
-2. Add `your_key: 'text'` to every language block in `TRANSLATIONS`.
+1. Add `data-i18n="your_key"` (or `data-i18n-attr="attr:your_key"`) to the element in the
+   root page.
+2. Add `your_key: 'text'` to **every** language block in `TRANSLATIONS`.
+3. Run `python3 scripts/build_language_pages.py` and commit the root page **and** `en/`.
+
+### Adding a new language
+
+1. Add a block to `TRANSLATIONS` (copy `en`).
+2. Add it to `LANGUAGE_DIRECTORIES` and `OPEN_GRAPH_LOCALES` in the build script.
+3. Add an `<a class="lang-btn" data-lang-switch="fr" href="/fr/">FR</a>` to `#lang-bar`
+   in each bilingual page, rebuild, and add the new URLs with alternates to `sitemap.xml`.
 
 ---
 
@@ -173,7 +183,7 @@ modules. This is the live layout:
 
 /js/
   nav.js             ← photo strip scroll compression logic
-  i18n.js            ← TRANSLATIONS object + setLang()
+  i18n.js            ← TRANSLATIONS (build-time source for / and /en/)
   flags.js           ← SHOW_WORK and other feature flags
 
 /index.html          ← assembles everything

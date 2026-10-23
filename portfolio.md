@@ -1,6 +1,6 @@
 # Portfolio — Christopher Rehm
 
-Human page: <https://christopherrehm.de/portfolio.html>
+Human pages: German <https://christopherrehm.de/portfolio.html> · English <https://christopherrehm.de/en/portfolio.html>
 
 A collection of websites and projects Christopher Rehm has worked on. All were built using Claude Code with the Sonnet 4.6 or Opus models.
 
