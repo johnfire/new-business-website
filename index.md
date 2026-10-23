@@ -1,8 +1,8 @@
-# Christopher Rehm — Engineering & Consulting
+# Christopher Rehm — AI consultant & software engineer near Augsburg
 
 Human page: <https://christopherrehm.de/> (German by default, English via the language toggle; same content in both).
 
-Senior engineer and architect with deep roots in hardware, full stack development, and AI tooling. Based in Klosterlechfeld, Bavaria, Germany. Available for new projects, on site in Bavaria or remote worldwide.
+Christopher Rehm is a senior software engineer and AI consultant in Klosterlechfeld near Augsburg, Bavaria, Germany (business name: Rehm Consulting). He automates business processes with AI agents, builds web applications, and tests systems for security gaps — on site in Bavaria or remotely, worldwide. Works in German and English.
 
 - **Email:** [car2187bus@pm.me](mailto:car2187bus@pm.me) — replies within 24 hours
 - **Intro video (90 seconds):** [English](https://youtu.be/AMyBZBL3nUE) · [German](https://youtu.be/HjNTXOYGww4) · YouTube channel: <https://www.youtube.com/channel/UCKPqIB0RgUstOFJ7DzkjCKA>
